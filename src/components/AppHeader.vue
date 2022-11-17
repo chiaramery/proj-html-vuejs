@@ -29,7 +29,7 @@ export default {
 
 <style lang="scss" scoped>
 header {
-    padding: 1.3em;
+    padding: 1.3em 0;
     background-color: lightgreen;
 
     .container {
