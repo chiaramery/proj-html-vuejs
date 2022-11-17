@@ -1,6 +1,11 @@
 <script>
 export default {
     name: 'MissionOverview',
+    data() {
+        return {
+            currentImg: 0,
+        }
+    }
 }
 </script>
 
@@ -13,6 +18,7 @@ export default {
                     <!-- Button -->
                     <div class="btn">Overview</div>
                     <div class="btn">Our Mission</div>
+                    <!-- /Button -->
                     <!-- Title -->
                     <h5>Our philosophy is learning throught play as we offer a stimulating environment for children.
                     </h5>
@@ -27,7 +33,7 @@ export default {
                                 estibulum.</p>
                         </div>
                     </div>
-                    <!-- Card information -->
+
                     <div class="info">
                         <div class="icon">
                             <img src="../assets/img/diagram_alt.png" alt="">
@@ -38,23 +44,24 @@ export default {
                                 estibulum.</p>
                         </div>
                     </div>
+                    <!-- /Card information -->
                 </div>
                 <!-- Slider -->
                 <div class="slider col-6">
-                    <div class="active-img">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus cupiditate quam maxime dicta
-                        earum omnis facere maiores, doloribus, repellat in quaerat mollitia iure provident officiis
-                        error atque? Dignissimos, deserunt perferendis?
+                    <div class="item">
+                        <img src="../assets/img/gallery_01-690x506.jpg" alt="">
                     </div>
                     <div class="bottom-img">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, eveniet in assumenda asperiores
-                        esse iste tempore non eligendi totam itaque possimus, enim velit. Error facilis et nemo dolores
-                        voluptatibus saepe!
+                        <img src="../assets/img/gallery_01-690x506.jpg" alt="">
+                        <img src="../assets/img/gallery_01-690x506.jpg" alt="">
+                        <img src="../assets/img/gallery_01-690x506.jpg" alt="">
                     </div>
                 </div>
+                <!-- /Slider -->
             </div>
         </div>
     </section>
+    <!-- /Section information -->
 </template>
 
 <style lang="scss" scoped>
@@ -110,16 +117,18 @@ export default {
             .slider {
                 border: 1px solid black;
 
-                .active-img {
+                .item {
                     width: 100%;
-                    height: 60%;
-                    border: 1px solid red;
                 }
 
                 .bottom-img {
-                    width: 100%;
-                    height: 40%;
-                    border: 1px solid blue;
+                    display: flex;
+                    justify-content: space-between;
+                    width: calc(100% / 3 - 4px);
+
+                    img {
+                        margin: 2px;
+                    }
                 }
             }
         }

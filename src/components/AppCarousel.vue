@@ -1,18 +1,23 @@
 <script>
+import { store } from "../store";
 export default {
     name: 'AppCarousel',
+    data() {
+        return {
+            store
+        }
+    }
 }
 </script>
 
 <template>
     <section id="carousel">
         <div class="container">
-            <ul class="math-info d-flex justify-content-between">
-                <li>prova</li>
-                <li>prova</li>
-                <li>prova</li>
-                <li>prova</li>
-            </ul>
+            <div class="math-info">
+                <div class="circle" v-for="(num, index) in store.circleInfo" :key="index">
+                    {{ num }}
+                </div>
+            </div>
         </div>
 
     </section>
@@ -21,11 +26,25 @@ export default {
 <style lang="scss" scoped>
 #carousel {
     width: 100%;
-    // DEBUG
-    height: 300px;
+    height: 30em;
+    background-image: url("../assets/img/blog_10-1024x614.jpg");
+    background-size: cover;
 
-    // .container {
-    //     .math-info {}
-    // }
+    .math-info {
+        height: 100%;
+        color: white;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .circle {
+            font-size: 2em;
+            padding: 2em;
+            border-radius: 100%;
+            border: 3px solid white;
+
+
+        }
+    }
 }
 </style>
