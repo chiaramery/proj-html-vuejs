@@ -40,10 +40,6 @@ export default {
     .container {
         .title {
             color: $text-color;
-
-            p {
-                color: gray;
-            }
         }
 
         .info-card {
@@ -51,6 +47,11 @@ export default {
 
             ul li {
                 margin: 1em;
+
+                h5 {
+                    margin: .5em;
+                    color: $text-color;
+                }
 
                 img {
                     padding: 3em;

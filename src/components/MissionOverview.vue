@@ -14,25 +14,28 @@ export default {
                     <div class="btn">Overview</div>
                     <div class="btn">Our Mission</div>
                     <!-- Title -->
-                    <h5>title</h5>
+                    <h5>Our philosophy is learning throught play as we offer a stimulating environment for children.
+                    </h5>
                     <!-- Card information -->
                     <div class="info">
                         <div class="icon">
-                            <img src="../assets/img/apple-touch-icon-114x114-precomposed.png" alt="">
+                            <img src="../assets/img/clock_alt.png" alt="">
                         </div>
                         <div class="text-overview">
-                            <h5>title</h5>
-                            <p>paragraph</p>
+                            <h5>Full Day Sessions</h5>
+                            <p>Pulnivar est metro lingual blandit maecenas retrum gravida cuprum. Maecenas node
+                                estibulum.</p>
                         </div>
                     </div>
                     <!-- Card information -->
                     <div class="info">
                         <div class="icon">
-                            <img src="../assets/img/apple-touch-icon-114x114-precomposed.png" alt="">
+                            <img src="../assets/img/diagram_alt.png" alt="">
                         </div>
                         <div class="text-overview">
-                            <h5>title</h5>
-                            <p>paragraph</p>
+                            <h5>Varied Classes</h5>
+                            <p>Pulnivar est metro lingual blandit maecenas retrum gravida cuprum. Maecenas node
+                                estibulum.</p>
                         </div>
                     </div>
                 </div>
@@ -55,23 +58,52 @@ export default {
 </template>
 
 <style lang="scss" scoped>
+@use "../style/partials/variables" as *;
+
 #overview {
     padding: 3em 0;
-    background-color: lightpink;
+    background-color: $bg-gray;
 
     .container {
         .row {
             .information {
                 border: 1px solid black;
 
+                h5 {
+                    font-size: 1.8em;
+                    color: $text-color;
+                }
+
                 .btn {
                     margin: 0 .5em;
-                    background-color: orange;
+                    color: white;
+                    background-color: $orange-icon;
                 }
 
                 .info {
                     display: flex;
+                    justify-content: space-between;
                     margin: .5em;
+
+                    .icon {
+                        padding: 2em;
+                        border-radius: 50%;
+                        background-color: $orange-icon;
+
+                        img {
+                            width: 50px;
+                        }
+                    }
+
+                    .text-overview {
+                        h5 {
+                            font-size: 1em;
+                        }
+
+                        p {
+                            font-size: 1em;
+                        }
+                    }
                 }
             }
 
