@@ -8,9 +8,10 @@ export default {
     <section id="more">
         <div class="container">
             <div class="more">
-                <h1>Title</h1>
-
-                <button>Search</button>
+                <p>How to Enroll Your Child to a Class?</p>
+                <div class="button">
+                    <a href="">Learn more</a>
+                </div>
             </div>
         </div>
     </section>
@@ -18,12 +19,25 @@ export default {
 
 <style lang="scss" scoped>
 #more {
-    padding: 1em 0;
-    background-color: violet;
-}
+    padding: 2em 0;
+    background-image: url("../assets/img/pattern.png");
+    background-size: cover;
 
-.more {
-    display: flex;
-    justify-content: space-around;
+    .more {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        p {
+            font-size: 2em;
+            color: white;
+        }
+
+        .button a {
+            border: 1px solid white;
+            color: white;
+            padding: .5em;
+        }
+    }
 }
 </style>

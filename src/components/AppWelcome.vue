@@ -1,6 +1,12 @@
 <script>
+import { store } from "../store";
 export default {
     name: 'AppWelcome',
+    data() {
+        return {
+            store
+        }
+    },
 }
 </script>
 
@@ -13,25 +19,10 @@ export default {
             </div>
             <div class="info-card">
                 <ul class="d-flex justify-content-center">
-                    <li>
-                        <i>icona</i>
-                        <h5>title</h5>
-                        <p>paragraph</p>
-                    </li>
-                    <li>
-                        <i>icona</i>
-                        <h5>title</h5>
-                        <p>paragraph</p>
-                    </li>
-                    <li>
-                        <i>icona</i>
-                        <h5>title</h5>
-                        <p>paragraph</p>
-                    </li>
-                    <li>
-                        <i>icona</i>
-                        <h5>title</h5>
-                        <p>paragraph</p>
+                    <li v-for="(icon, index) in store.iconWelcome" :key="index">
+                        <img src="../assets/img/schoolbag_alt.png" alt="">
+                        <h5>{{ icon.title }}</h5>
+                        <p>{{ icon.p}}</p>
                     </li>
                 </ul>
             </div>
@@ -41,12 +32,18 @@ export default {
 </template>
 
 <style lang="scss" scoped>
+@use "../style/partials/variables" as *;
+
 #welcome {
     padding: 2em 0;
 
     .container {
         .title {
-            text-align: center;
+            color: $text-color;
+
+            p {
+                color: gray;
+            }
         }
 
         .info-card {
@@ -54,6 +51,11 @@ export default {
 
             ul li {
                 margin: 1em;
+
+                img {
+                    padding: 3em;
+                    background-color: $orange-icon;
+                }
             }
         }
     }

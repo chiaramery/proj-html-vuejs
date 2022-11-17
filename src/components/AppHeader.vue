@@ -1,6 +1,12 @@
 <script>
+import { store } from "../store";
 export default {
     name: 'AppHeader',
+    data() {
+        return {
+            store
+        }
+    },
 }
 </script>
 
@@ -9,17 +15,14 @@ export default {
         <div class="container">
             <div class="header-container">
                 <div class="logo">
-                    <h1>Logo</h1>
+                    <img src="../assets/img/logo.png" alt="">
                 </div>
                 <div class="icon">
                     <ul>
-                        <li>lorem</li>
-                        <li>lorem</li>
-                        <li>lorem</li>
-                        <li>lorem</li>
-                        <li>lorem</li>
-                        <li>lorem</li>
-                        <li>lorem</li>
+                        <li v-for="(link, index) in store.links" :key="index">
+                            <img src="../assets/img/cart.png" alt="">
+                            <a :href="href">{{ link.name}}</a>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -28,21 +31,41 @@ export default {
 </template>
 
 <style lang="scss" scoped>
+@use "../style/partials/variables" as *;
+
 header {
-    padding: 1.3em 0;
-    background-color: lightgreen;
+    height: 7em;
+    background-color: white;
 
     .container {
+
         .header-container {
             display: flex;
             justify-content: space-between;
 
+            .logo {
+                width: 150px;
+            }
+
             .icon {
+                width: 70%;
+
                 ul {
                     display: flex;
 
                     li {
-                        margin: 1em;
+                        align-items: center;
+                        text-align: center;
+                        height: 100%;
+                        padding: 1em;
+
+                        &:hover {
+                            background-color: orangered;
+                        }
+
+                        a {
+                            color: $text-color;
+                        }
                     }
                 }
             }
