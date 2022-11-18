@@ -7,6 +7,7 @@ import AppCarousel from './AppCarousel.vue';
 import AppClasses from './AppClasses.vue';
 import AppGoal from './AppGoal.vue';
 import AppWelcome from './AppWelcome.vue';
+import WhatsNew from './WhatsNew.vue';
 export default {
     name: 'AppMain',
     components: {
@@ -18,6 +19,7 @@ export default {
         AppClasses,
         AppGoal,
         MeetStaff,
+        WhatsNew,
     },
 }
 </script>
@@ -32,6 +34,7 @@ export default {
     <AppGoal />
     <AppMore />
     <MeetStaff />
+    <WhatsNew />
 </template>
 
 <style lang="scss" scoped>

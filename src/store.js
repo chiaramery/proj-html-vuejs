@@ -135,6 +135,27 @@ export const store = reactive({
         },
 
 
+    ],
+    new: [
+        {
+            date: 'October 03, 2014',
+            img: '',
+            title: 'Drawing and Painting Lessons',
+            name: 'Anna Brown',
+        },
+        {
+            date: 'October 03, 2014',
+            img: '',
+            title: 'Fall Parents Meeting Day',
+            name: 'Anna Brown',
+        },
+        {
+            date: 'September 20, 2014',
+            img: '',
+            title: 'Birthday in Kindergarten',
+            name: 'Anna Brown',
+        },
+
     ]
 
 })
