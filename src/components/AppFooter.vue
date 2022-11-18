@@ -74,6 +74,7 @@ footer {
     .footer-bottom {
         width: 30%;
         margin: 0 auto;
+        padding: 1.7em;
 
         .list-icon {
             display: flex;
