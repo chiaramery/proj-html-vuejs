@@ -1,6 +1,7 @@
 import { reactive } from "vue";
 
 export const store = reactive({
+    // Header links
     links: [
         {
             name: 'Home',
@@ -38,6 +39,7 @@ export const store = reactive({
             img: "../assets/img/home.png",
         },
     ],
+    // Icon section welcome
     iconWelcome: [
         {
             title: 'Morbi Etos',
@@ -61,6 +63,7 @@ export const store = reactive({
             p: 'lorem ipsum dol',
         }
     ],
+    // Item carousel
     carouselClasses: {
         images: [
             '../assets/img/gallery_01-690x506.jpg',
@@ -71,11 +74,39 @@ export const store = reactive({
             '../assets/img/gallery_08-690x506.jpg',
         ]
     },
+    // Element info math
     circleInfo: [
         '507',
         '235',
         '100%',
         '1050',
+    ],
+    // Poin of list
+    listCheck: [
+        'Comprehensive reporting on individual achievement',
+        'Education field trips and school presentations',
+        'Individual attention in a small-class setting',
+        'Learning program with after-school care',
+        'Opportunities to carry out scientific investigations',
+        'Positive learning environment for your child'
+    ],
+    iconCard: [
+        {
+            title: 'Learning & Fun',
+            p: 'Praesent modea est gravida node vehical luctus',
+        },
+        {
+            title: 'Healthy Meals',
+            p: 'Terminal interdium a eleifend maecenas est morbi',
+        },
+        {
+            title: 'Friendly Place',
+            p: 'Terminal interdium a eleifend maecenas est morbi',
+        },
+        {
+            title: 'Learning & Fun',
+            p: 'Praesent modea est gravida node vehical luctus',
+        },
     ]
 
 })

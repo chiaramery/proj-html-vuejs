@@ -5,6 +5,7 @@ import MeetStaff from './MeetStaff.vue';
 import MissionOverview from './MissionOverview.vue';
 import AppCarousel from './AppCarousel.vue';
 import AppClasses from './AppClasses.vue';
+import AppGoal from './AppGoal.vue';
 import AppWelcome from './AppWelcome.vue';
 export default {
     name: 'AppMain',
@@ -15,6 +16,7 @@ export default {
         MissionOverview,
         AppCarousel,
         AppClasses,
+        AppGoal,
         MeetStaff,
     },
 }
@@ -27,6 +29,8 @@ export default {
     <MissionOverview />
     <AppCarousel />
     <AppClasses />
+    <AppGoal />
+    <AppMore />
     <MeetStaff />
 </template>
 

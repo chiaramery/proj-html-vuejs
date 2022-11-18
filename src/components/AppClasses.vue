@@ -21,9 +21,19 @@ export default {
                 </div>
             </div>
             <div class="container-card">
-                <div class="card-info" v-for="number in 4" :key="number">Lorem ipsum, dolor sit amet
-                    consectetur
-                    adipisicing elit. Necessitatibus quaerat rerum fuga ab laudantium. </div>
+                <div class="card-info" v-for="number in 4" :key="number">
+                    <div class="text-card">
+                        <h5>Title</h5>
+                        <p>Class name</p>
+                        <div class="text-info">
+                            <h6>12-24</h6>
+                            <p>Month olds</p>
+                        </div>
+                    </div>
+                    <div class="image-card">
+                        <img src="../assets/img/class_01-690x506.jpg" alt="">
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -44,6 +54,7 @@ export default {
     .row {
         .text-title {
             color: $text-color;
+            font-size: 1.8em;
         }
 
         .text-p {
@@ -58,7 +69,26 @@ export default {
         .card-info {
             width: calc(100% / 2 - 16px);
             margin: 8px;
+            display: flex;
+            justify-content: space-between;
+            color: white;
             background-color: $card-color;
+
+            .text-card {
+                padding: 1em;
+
+                .text-info {
+                    font-size: 1.3em;
+
+                    p {
+                        font-size: .8em;
+                    }
+                }
+            }
+
+            .image-card {
+                width: 50%;
+            }
         }
 
     }
