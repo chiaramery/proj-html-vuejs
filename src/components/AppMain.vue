@@ -8,6 +8,8 @@ import AppClasses from './AppClasses.vue';
 import AppGoal from './AppGoal.vue';
 import AppWelcome from './AppWelcome.vue';
 import WhatsNew from './WhatsNew.vue';
+import AppMap from './AppMap.vue';
+import ContactUs from './ContactUs.vue';
 export default {
     name: 'AppMain',
     components: {
@@ -20,6 +22,8 @@ export default {
         AppGoal,
         MeetStaff,
         WhatsNew,
+        AppMap,
+        ContactUs,
     },
 }
 </script>
@@ -35,6 +39,8 @@ export default {
     <AppMore />
     <MeetStaff />
     <WhatsNew />
+    <AppMap />
+    <ContactUs />
 </template>
 
 <style lang="scss" scoped>

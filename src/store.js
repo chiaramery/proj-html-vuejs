@@ -156,6 +156,32 @@ export const store = reactive({
             name: 'Anna Brown',
         },
 
+    ],
+    contact: [
+        {
+            title: 'Posta Address',
+            one: 'Fable Care Center',
+            two: '85 Fentiman Ave',
+            three: 'Ottawa, ON K1S 0T7',
+        },
+        {
+            title: 'Phone & Email',
+            one: 'Phone: 1-800-64-38',
+            two: 'Fax: 1-800-64-39',
+            three: 'office@fable.com',
+        },
+        {
+            title: 'Business Hour',
+            one: 'Monday - Friday',
+            two: '8.00 am - 5.00 pm',
+            three: 'Weekend Closed',
+        },
+        {
+            title: 'Sessions',
+            one: 'Mornings, 8 am - 12 noon ',
+            two: 'Afternoons, 1 pm - 5 pm',
+            three: 'Full Day, 8 am - 5 pm',
+        },
     ]
 
 })
