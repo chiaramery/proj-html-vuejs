@@ -182,6 +182,5 @@ export const store = reactive({
             two: 'Afternoons, 1 pm - 5 pm',
             three: 'Full Day, 8 am - 5 pm',
         },
-    ]
-
+    ],
 })
