@@ -45,6 +45,10 @@ export default {
     .container {
         text-align: center;
 
+        .title {
+            color: #554e9e;
+        }
+
         .card {
             width: calc(100% / 3);
         }
@@ -57,7 +61,7 @@ export default {
             display: inline-block;
             margin-top: .8em;
             padding: .5em;
-            background-color: orange;
+            background-color: #fe6601;
             color: white;
         }
     }

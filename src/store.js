@@ -183,4 +183,12 @@ export const store = reactive({
             three: 'Full Day, 8 am - 5 pm',
         },
     ],
+    listFooter: [
+        'Friendly and welcome place',
+        'Science ad art classes',
+        'Positive learning environment',
+        'Educational field trips',
+        'Writing and reading classes',
+        'Science and art classes'
+    ]
 })

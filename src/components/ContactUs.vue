@@ -46,7 +46,8 @@ export default {
 
 <style lang="scss" scoped>
 #contact-us {
-    padding: 3em 0;
+    position: relative;
+    padding: 6em;
 
     .title {
         h5 {
@@ -100,7 +101,12 @@ export default {
     }
 
     .button {
-        background-color: orange;
+        position: absolute;
+        bottom: 3em;
+        left: 50%;
+        transform: translate(-50%);
+        background-color: #fe6601;
+        color: white;
         padding: .5em;
         cursor: pointer;
         display: inline-block;

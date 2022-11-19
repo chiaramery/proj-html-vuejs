@@ -5,18 +5,13 @@ export default {
 </script>
 
 <template>
-    <!-- <img src="../assets/img/vt (1).png" alt="">
-    <img src="../assets/img/vt (1).png" alt="">
-    <img src="../assets/img/vt (2).png" alt="">
-    <img src="../assets/img/vt (1).png" alt="">
-    <img src="../assets/img/vt (1).png" alt="">
-    <img src="../assets/img/vt (1).png" alt="">
-    <img src="../assets/img/vt (1).png" alt="">
-    <img src="../assets/img/vt (1).png" alt="">
-    <img src="../assets/img/vt (1).png" alt="">
-    <img src="../assets/img/vt (1).png" alt=""> -->
+    <section id="map">
+        <img src="../assets/img/mappa.png" alt="">
+    </section>
 </template>
 
 <style lang="scss" scoped>
-
+#map {
+    padding: 3em 0;
+}
 </style>

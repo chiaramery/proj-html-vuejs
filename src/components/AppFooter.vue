@@ -1,6 +1,12 @@
 <script>
+import { store } from "../store";
 export default {
     name: 'AppFooter',
+    data() {
+        return {
+            store
+        }
+    }
 }
 </script>
 
@@ -10,28 +16,35 @@ export default {
         <div class="footer-top">
             <div class="container">
                 <div class="row">
-                    <div class="col-3">
+                    <div class="about col-3">
                         <h5>ABOUT US</h5>
                         <p>Elipsis magna a nulla elite forte maecenas est elementum magna etos interdum movum morbi
                             vehivula
                             morbi</p>
+                        <img src="../assets/img/logo_footer.png" alt="">
                     </div>
-                    <div class="col-3">
+                    <div class="archives col-3">
                         <h5>ARCHIVES</h5>
-                        <ul>
-                            <li>OCTOBER 2014 (2)</li>
-                            <li>SEPTEMBER 2014(2)</li>
-                            <li>AUGUST 2014 (2)</li>
-                            <li>JULY 2014 (2)</li>
-                            <li>JUNE 2014 (2)</li>
-                            <li>MAY 2014 (2)</li>
-                        </ul>
+
+                        <div class="month">OCTOBER 2014 (2)</div>
+                        <div class="month">SEPTEMBER 2014(2)</div>
+                        <div class="month">AUGUST 2014 (2)</div>
+                        <div class="month">JULY 2014 (2)</div>
+                        <div class="month">JUNE 2014 (2)</div>
+                        <div class="month">MAY 2014 (2)</div>
+
                     </div>
-                    <div class="col-3">
+                    <div class="features col-3">
                         <h5>OUR FEATURES</h5>
                         <p>Elipsis magna a nulla elite forte maecenas est elementum magna etos interdum movum morbi
                             vehivula
                             morbi</p>
+                        <div v-for="(point, index) in store.listFooter" :key="index">
+                            <div class="list">
+                                <img src="../assets/img/style_4_alt.png" alt="">
+                                <p>{{ point }}</p>
+                            </div>
+                        </div>
                     </div>
                     <div class="col-3">
                         <h5>RECENT POSTS</h5>
@@ -69,9 +82,43 @@ footer {
         background-size: cover;
         color: white;
 
-        p {
-            color: inherit;
+        .about {
+            img {
+                width: 80%;
+            }
         }
+
+        .archives {
+            // text-align: center;
+
+            .month {
+                border: 1px solid gray;
+                padding: .3em;
+                margin: .3em;
+            }
+        }
+
+        .features {
+            .list {
+                display: flex;
+                align-items: center;
+
+                img {
+                    max-width: 100%;
+                    margin: 0 15px 15px 0;
+                }
+
+                p {
+                    font-size: .8em;
+                }
+            }
+        }
+
+        li,
+        p {
+            color: gray;
+        }
+
     }
 
 
