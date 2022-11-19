@@ -44,23 +44,23 @@ export const store = reactive({
         {
             title: 'Morbi Etos',
             icon: "../assets/img/schoolbag_alt.png",
-            p: 'lorem ipsum dol',
+            p: 'Praesent interdum est gravida vehicula est node maecenas loareet morbi a dosis luctus novum est praesent.',
 
         },
         {
             title: 'Congue Gravida',
             icon: "../assets/img/stroller_alt.png",
-            p: 'lorem ipsum dol',
+            p: 'Elipsis magna a terminal nulla elementuk morbi elite forte maecenas est magna etos interdum vitae est.',
         },
         {
             title: 'Maecenadas Node',
             icon: "../assets/img/globe_alt.png",
-            p: 'lorem ipsum dol',
+            p: 'Praesent interdum est gravida vehicula est node maecenas loareet morbi a dosis luctus novum est praesent.',
         },
         {
             title: 'Praesent Morbi',
             icon: "../assets/img/bell_alt.png",
-            p: 'lorem ipsum dol',
+            p: 'Elipsis magna a terminal nulla elementuk morbi elite forte maecenas est magna etos interdum vitae est.',
         }
     ],
     // Item carousel
@@ -104,7 +104,7 @@ export const store = reactive({
             p: 'Terminal interdium a eleifend maecenas est morbi',
         },
         {
-            title: 'Learning & Fun',
+            title: 'Children Safety',
             p: 'Praesent modea est gravida node vehical luctus',
         },
     ],

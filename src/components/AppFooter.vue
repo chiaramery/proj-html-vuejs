@@ -68,6 +68,10 @@ footer {
         background-image: url("../assets/img/pattern.png");
         background-size: cover;
         color: white;
+
+        p {
+            color: inherit;
+        }
     }
 
 

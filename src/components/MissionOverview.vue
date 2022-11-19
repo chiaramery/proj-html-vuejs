@@ -50,6 +50,8 @@ export default {
                 <div class="slider col-6">
                     <div class="item">
                         <img src="../assets/img/gallery_01-690x506.jpg" alt="">
+                        <img class="prev" src="../assets/img/slider_previous.png" alt="">
+                        <img class="next" src="../assets/img/slider_next.png" alt="">
                     </div>
                     <div class="bottom-img">
                         <img src="../assets/img/gallery_01-690x506.jpg" alt="">
@@ -71,12 +73,13 @@ export default {
     padding: 3em 0;
     background-color: $bg-gray;
 
+    // Card info
     .container {
         .row {
             .information {
-                border: 1px solid black;
 
                 h5 {
+                    padding: .5em 0;
                     font-size: 1.8em;
                     color: $text-color;
                 }
@@ -90,6 +93,7 @@ export default {
                 .info {
                     display: flex;
                     justify-content: space-between;
+                    align-items: flex-end;
                     margin: .5em;
 
                     .icon {
@@ -114,11 +118,29 @@ export default {
                 }
             }
 
+            // Slider
             .slider {
-                border: 1px solid black;
 
                 .item {
                     width: 100%;
+                    position: relative;
+
+                    .next,
+                    .prev {
+                        position: absolute;
+                        top: 50%;
+                        z-index: 1;
+                        cursor: pointer;
+                        background-color: #fe6601;
+                    }
+
+                    .next {
+                        right: 0;
+                    }
+
+                    .prev {
+                        left: 0;
+                    }
                 }
 
                 .bottom-img {
@@ -127,7 +149,8 @@ export default {
                     width: calc(100% / 3 - 4px);
 
                     img {
-                        margin: 2px;
+                        margin-top: 5px;
+                        margin-right: 5px;
                     }
                 }
             }

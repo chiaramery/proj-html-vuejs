@@ -10,7 +10,7 @@ export default {
             <div class="more">
                 <p>How to Enroll Your Child to a Class?</p>
                 <div class="button">
-                    <a href="">Learn more</a>
+                    <a href="">LEARN MORE<img src="../assets/img/slider_next.png" alt=""></a>
                 </div>
             </div>
         </div>
@@ -33,11 +33,19 @@ export default {
             color: white;
         }
 
-        .button a {
-            border: 1px solid white;
-            color: white;
-            padding: .5em;
+        .button {
+
+            a {
+                border: 1px solid white;
+                color: white;
+                padding: .5em;
+
+                img {
+                    width: 20%;
+                }
+            }
         }
+
     }
 }
 </style>

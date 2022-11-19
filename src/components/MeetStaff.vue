@@ -24,9 +24,11 @@ export default {
                         care.</h5>
                 </div>
                 <div class="p-col col-6">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, dolor quis molestias ut
-                    fugit,
-                    velit ratione nobis architecto iste dolore, optio alias impedit odit officia.
+                    <p>
+                        Praesent interdum est gravida vehicula est node maecenas loareet morbi a dosis luctus novum est
+                        praesent. Urna eget lacinia eleifend praesent luctus a arcu quis facilisis venenatis. Aenean
+                        interdum, nibh vitae sodales, magna ante feugiat elit maecenas.
+                    </p>
                 </div>
             </div>
             <!-- Team -->
@@ -61,6 +63,10 @@ export default {
 
         .wrapper-col {
             display: flex;
+
+            h5 {
+                color: #554e9e;
+            }
         }
 
         .wrapper-team {
@@ -73,6 +79,7 @@ export default {
 
 
                     .name {
+                        color: #554e9e;
                         text-align: center;
                     }
                 }

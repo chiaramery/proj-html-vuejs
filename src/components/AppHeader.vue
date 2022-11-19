@@ -20,7 +20,7 @@ export default {
                 <div class="icon">
                     <ul>
                         <li v-for="(link, index) in store.links" :key="index">
-                            <img src="../assets/img/cart.png" alt="">
+                            <img class="img" src="../assets/img/cart.png" alt="">
                             <a :href="href">{{ link.name}}</a>
                         </li>
                     </ul>
@@ -56,15 +56,21 @@ header {
                     li {
                         align-items: center;
                         text-align: center;
-                        height: 100%;
+                        line-height: 2.5em;
                         padding: 1em;
 
                         &:hover {
-                            background-color: orangered;
+                            color: white;
+                            background-color: #fe6601;
                         }
 
                         a {
+                            height: 100%;
                             color: $text-color;
+
+                            &:hover {
+                                color: inherit;
+                            }
                         }
                     }
                 }
