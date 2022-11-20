@@ -190,5 +190,5 @@ export const store = reactive({
         'Educational field trips',
         'Writing and reading classes',
         'Science and art classes'
-    ]
+    ],
 })

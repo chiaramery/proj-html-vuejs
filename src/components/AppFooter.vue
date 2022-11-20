@@ -46,13 +46,21 @@ export default {
                             </div>
                         </div>
                     </div>
-                    <div class="col-3">
+                    <div class="recent col-3">
                         <h5>RECENT POSTS</h5>
-                        <ul>
-                            <li>lorem</li>
-                            <li>lorem</li>
-                            <li>lorem</li>
-                        </ul>
+                        <div class="posts" v-for="(element, index) in store.new" :key="index">
+                            <div class="image">
+                                <img src="../assets/img/blog_08-150x150.jpg" alt="">
+                            </div>
+                            <div class="text-post">
+                                <span>{{ element.title }}</span>
+                                <p>
+                                    <img src="../assets/img/date_footer.png" alt="">
+                                    {{ element.date }}
+                                </p>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </div>
@@ -62,14 +70,24 @@ export default {
         <div class="footer-bottom">
             <div class="icon">
                 <ul class="list-icon">
-                    <li>ciao</li>
-                    <li>ciao</li>
-                    <li>ciao</li>
-                    <li>ciao</li>
-                    <li>ciao</li>
+                    <li>
+                        <img src="../assets/img/behance.png" alt="">
+                    </li>
+                    <li>
+                        <img src="../assets/img/dribbble.png" alt="">
+                    </li>
+                    <li>
+                        <img src="../assets/img/envato.png" alt="">
+                    </li>
+                    <li>
+                        <img src="../assets/img/facebook.png" alt="">
+                    </li>
+                    <li>
+                        <img src="../assets/img/twitter.png" alt="">
+                    </li>
                 </ul>
             </div>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. </p>
+            <p>@ Fable - Children Kindergarten WordPress Theme by QuanticaLabs </p>
         </div>
     </footer>
 </template>
@@ -100,12 +118,13 @@ footer {
 
         .features {
             .list {
+
                 display: flex;
                 align-items: center;
 
                 img {
                     max-width: 100%;
-                    margin: 0 15px 15px 0;
+                    margin: 0 7px 7px 0;
                 }
 
                 p {
@@ -119,6 +138,28 @@ footer {
             color: gray;
         }
 
+        .recent {
+
+            .posts {
+                display: flex;
+                justify-content: space-between;
+
+                .image {
+                    width: 80px;
+                }
+
+                .text-post {
+                    font-size: .8em;
+                    margin: .7em;
+
+                    img {
+                        width: 10%;
+                    }
+
+                }
+            }
+        }
+
     }
 
 
@@ -127,12 +168,18 @@ footer {
         margin: 0 auto;
         padding: 1.7em;
 
+        p {
+            text-align: center;
+            font-size: .7em;
+        }
+
         .list-icon {
             display: flex;
+            justify-content: center;
 
             li {
-                text-align: center;
-                margin: .8em;
+                background-color: #fe6601;
+                margin: .1em;
             }
         }
     }
