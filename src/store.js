@@ -47,10 +47,26 @@ export const store = reactive({
     ],
     // Element info math
     circleInfo: [
-        '507',
-        '235',
-        '100%',
-        '1050',
+        {
+            num: '507',
+            title: 'Our Pupils',
+            p: 'Pulvinar forte node terminal est elipsis prism',
+        },
+        {
+            num: '235',
+            title: 'Teaching Hours',
+            p: 'Elipsis morbi nulla a metro interdium vitae elite.',
+        },
+        {
+            num: '100%',
+            title: 'Satisfied Parents',
+            p: 'Elementum pulvinar detos diaspis movum blandit.',
+        },
+        {
+            num: '1050',
+            title: 'Meals Per Year',
+            p: 'Pulvinar forte node terminal est elipsis prism',
+        },
     ],
     // Card Class
     cardClass: [
