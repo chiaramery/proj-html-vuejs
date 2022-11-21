@@ -40,16 +40,11 @@ export const store = reactive({
         },
     ],
     // Item carousel
-    carouselClasses: {
-        images: [
-            '../assets/img/gallery_01-690x506.jpg',
-            '../assets/img/gallery_02-690x506.jpg',
-            '../assets/img/gallery_03-690x506.jpg',
-            '../assets/img/gallery_04-690x506.jpg',
-            '../assets/img/gallery_07-690x506.jpg',
-            '../assets/img/gallery_08-690x506.jpg',
-        ]
-    },
+    images: [
+        '../assets/img/gallery_01-690x506.jpg',
+        '../assets/img/gallery_02-690x506.jpg',
+        '../assets/img/gallery_03-690x506.jpg',
+    ],
     // Element info math
     circleInfo: [
         '507',
@@ -57,6 +52,7 @@ export const store = reactive({
         '100%',
         '1050',
     ],
+    // Card Class
     cardClass: [
         {
             title: 'Little Lambs',
@@ -96,6 +92,7 @@ export const store = reactive({
         'Opportunities to carry out scientific investigations',
         'Positive learning environment for your child'
     ],
+    // Icon
     iconCard: [
         {
             title: 'Learning & Fun',
@@ -114,6 +111,7 @@ export const store = reactive({
             p: 'Praesent modea est gravida node vehical luctus',
         },
     ],
+    // Teachers
     teachers: [
         {
             name: 'Ruth Richie',
@@ -142,6 +140,7 @@ export const store = reactive({
 
 
     ],
+    // What's New
     new: [
         {
             date: 'October 03, 2014',
@@ -163,6 +162,7 @@ export const store = reactive({
         },
 
     ],
+    // Contacts
     contact: [
         {
             title: 'Posta Address',
@@ -189,6 +189,7 @@ export const store = reactive({
             three: 'Full Day, 8 am - 5 pm',
         },
     ],
+    // Footer list
     listFooter: [
         'Friendly and welcome place',
         'Science ad art classes',

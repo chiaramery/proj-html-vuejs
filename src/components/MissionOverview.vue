@@ -1,9 +1,27 @@
 <script>
+import { store } from "../store";
 export default {
     name: 'MissionOverview',
     data() {
         return {
-            currentImg: 0,
+            store,
+            activeSlide: 0,
+        }
+    },
+    methods: {
+        showNext() {
+            if (this.activeSlide < store.images.length - 1) {
+                this.activeSlide++;
+            } else {
+                this.activeSlide = 0;
+            }
+        },
+        showPrev() {
+            if (this.activeSlide > 0) {
+                this.activeSlide--;
+            } else {
+                this.activeSlide = store.images.length - 1;
+            }
         }
     }
 }
@@ -50,13 +68,20 @@ export default {
                 <div class="slider col-6">
                     <div class="item">
                         <img src="../assets/img/gallery_01-690x506.jpg" alt="">
-                        <img class="prev" src="../assets/img/slider_previous.png" alt="">
-                        <img class="next" src="../assets/img/slider_next.png" alt="">
+                        <img class="prev" @click.prevent="showPrev" src="../assets/img/slider_previous.png" alt="">
+                        <img class="next" @click.prevent="showNext" src="../assets/img/slider_next.png" alt="">
                     </div>
                     <div class="bottom-img">
-                        <img src="../assets/img/gallery_01-690x506.jpg" alt="">
-                        <img src="../assets/img/gallery_01-690x506.jpg" alt="">
-                        <img src="../assets/img/gallery_01-690x506.jpg" alt="">
+                        <div class="thumb">
+                            <img src="../assets/img/gallery_01-690x506.jpg" alt="">
+                        </div>
+                        <div class="thumb active">
+                            <img src="../assets/img/gallery_02-690x506.jpg" alt="">
+                        </div>
+                        <div class="thumb">
+                            <img src="../assets/img/gallery_03-690x506.jpg" alt="">
+                        </div>
+
                     </div>
                 </div>
                 <!-- /Slider -->
@@ -146,12 +171,22 @@ export default {
                 .bottom-img {
                     display: flex;
                     justify-content: space-between;
-                    width: calc(100% / 3 - 4px);
+                    width: 100%;
 
-                    img {
-                        margin-top: 5px;
-                        margin-right: 5px;
+                    .thumb {
+                        width: calc(100% / 3 - 5px);
+
+
+                        img {
+                            padding-bottom: .5em;
+                            margin-top: 5px;
+                        }
                     }
+
+                    .active {
+                        border-bottom: 2px solid orange;
+                    }
+
                 }
             }
         }
