@@ -16,6 +16,7 @@ export default {
             <div class="title">
                 <h5>Contact Us</h5>
                 <p>Our postal address and contact details</p>
+                <img src="../assets/img/header_divider.png" alt="">
             </div>
             <div class="row">
                 <div class="item" v-for="(element, index) in store.contact" :key="index">
@@ -47,12 +48,15 @@ export default {
 <style lang="scss" scoped>
 #contact-us {
     position: relative;
-    padding: 6em;
+    padding: 3em 3em 6em 3em;
 
     .title {
+        padding-bottom: 3em;
+
         h5 {
             color: #554e9e;
         }
+
     }
 
     .row {

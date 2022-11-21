@@ -163,18 +163,21 @@ export const store = reactive({
             img: '',
             title: 'Drawing and Painting Lessons',
             name: 'Anna Brown',
+            event: 'Events, Fun'
         },
         {
             date: 'October 03, 2014',
             img: '',
             title: 'Fall Parents Meeting Day',
             name: 'Anna Brown',
+            event: 'Dance, Education'
         },
         {
             date: 'September 20, 2014',
             img: '',
             title: 'Birthday in Kindergarten',
             name: 'Anna Brown',
+            event: 'Games, General'
         },
 
     ],

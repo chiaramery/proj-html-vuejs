@@ -17,7 +17,9 @@ export default {
                         welcoming
                         and safe and my daughter loves being there.
                     </span>
-                    <div>-------</div>
+                    <div class="hr">
+                        <hr>
+                    </div>
                     <span>Joe R. Hamblen</span>
                 </div>
             </div>
@@ -64,6 +66,15 @@ export default {
             text-align: center;
             font-size: 1.5em;
             color: white;
+
+            .hr {
+                width: 10%;
+                margin: 0 auto;
+            }
+
+            span {
+                font-size: .6em;
+            }
         }
 
         .wrapper-button {
