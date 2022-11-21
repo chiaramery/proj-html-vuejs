@@ -18,6 +18,9 @@ export default {
                 <div class="row">
                     <div class="about col-3">
                         <h5>ABOUT US</h5>
+                        <div class="hr">
+                            <hr>
+                        </div>
                         <p>Elipsis magna a nulla elite forte maecenas est elementum magna etos interdum movum morbi
                             vehivula
                             morbi</p>
@@ -26,19 +29,37 @@ export default {
                     <div class="archives col-3">
                         <h5>ARCHIVES</h5>
 
-                        <div class="month">OCTOBER 2014 (2)</div>
-                        <div class="month">SEPTEMBER 2014(2)</div>
-                        <div class="month">AUGUST 2014 (2)</div>
-                        <div class="month">JULY 2014 (2)</div>
-                        <div class="month">JUNE 2014 (2)</div>
-                        <div class="month">MAY 2014 (2)</div>
+                        <div class="hr">
+                            <hr>
+                        </div>
+
+                        <div class="month">
+                            <p>OCTOBER 2014 (2)</p>
+                        </div>
+                        <div class="month">
+                            <p>SEPTEMBER 2014(2)</p>
+                        </div>
+                        <div class="month">
+                            <p>AUGUST 2014 (2)</p>
+                        </div>
+                        <div class="month">
+                            <p>JULY 2014 (2)</p>
+                        </div>
+                        <div class="month">
+                            <p>JUNE 2014 (2)</p>
+                        </div>
+                        <div class="month">
+                            <p>MAY 2014 (2)</p>
+                        </div>
 
                     </div>
                     <div class="features col-3">
                         <h5>OUR FEATURES</h5>
-                        <p>Elipsis magna a nulla elite forte maecenas est elementum magna etos interdum movum morbi
-                            vehivula
-                            morbi</p>
+                        <div class="hr">
+                            <hr>
+                        </div>
+                        <p>Nunc gravida tutrum mauris vehin hasellus ac pretium augue vivamul lacus ligul mattis ac
+                            vene:</p>
                         <div v-for="(point, index) in store.listFooter" :key="index">
                             <div class="list">
                                 <img src="../assets/img/style_4_alt.png" alt="">
@@ -48,6 +69,9 @@ export default {
                     </div>
                     <div class="recent col-3">
                         <h5>RECENT POSTS</h5>
+                        <div class="hr">
+                            <hr>
+                        </div>
                         <div class="posts" v-for="(element, index) in store.new" :key="index">
                             <div class="image">
                                 <img src="../assets/img/blog_08-150x150.jpg" alt="">
@@ -100,6 +124,15 @@ footer {
         background-size: cover;
         color: white;
 
+        p {
+            color: white;
+            font-size: .7em;
+        }
+
+        .hr {
+            width: 30%;
+        }
+
         .about {
             img {
                 width: 80%;
@@ -107,11 +140,12 @@ footer {
         }
 
         .archives {
-            // text-align: center;
 
             .month {
                 border: 1px solid gray;
-                padding: .3em;
+                height: 2em;
+                line-height: 2em;
+                padding-left: .5em;
                 margin: .3em;
             }
         }
@@ -121,6 +155,7 @@ footer {
 
                 display: flex;
                 align-items: center;
+                font-size: .8em;
 
                 img {
                     max-width: 100%;
@@ -131,11 +166,6 @@ footer {
                     font-size: .8em;
                 }
             }
-        }
-
-        li,
-        p {
-            color: gray;
         }
 
         .recent {
