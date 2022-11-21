@@ -8,6 +8,7 @@ import AppCarousel from './AppCarousel.vue';
 import AppClasses from './AppClasses.vue';
 import AppGoal from './AppGoal.vue';
 import AppWelcome from './AppWelcome.vue';
+import SlideKinde from "./SlideKinde.vue";
 import WhatsNew from './WhatsNew.vue';
 import AppMap from './AppMap.vue';
 import ContactUs from './ContactUs.vue';
@@ -22,6 +23,7 @@ export default {
         AppClasses,
         AppGoal,
         MeetStaff,
+        SlideKinde,
         WhatsNew,
         AppMap,
         ContactUs,
@@ -39,6 +41,7 @@ export default {
     <AppGoal />
     <AppMore />
     <MeetStaff />
+    <SlideKinde />
     <WhatsNew />
     <AppMap />
     <ContactUs />

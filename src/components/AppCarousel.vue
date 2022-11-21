@@ -37,6 +37,7 @@ export default {
     height: 28em;
     background-image: url("../assets/img/parallax_01.jpg");
     background-size: cover;
+    background-position: center;
 
     .row {
         .math-info {
