@@ -39,30 +39,6 @@ export const store = reactive({
             img: "../assets/img/home.png",
         },
     ],
-    // Icon section welcome
-    iconWelcome: [
-        {
-            title: 'Morbi Etos',
-            icon: "../assets/img/schoolbag_alt.png",
-            p: 'Praesent interdum est gravida vehicula est node maecenas loareet morbi a dosis luctus novum est praesent.',
-
-        },
-        {
-            title: 'Congue Gravida',
-            icon: "../assets/img/stroller_alt.png",
-            p: 'Elipsis magna a terminal nulla elementuk morbi elite forte maecenas est magna etos interdum vitae est.',
-        },
-        {
-            title: 'Maecenadas Node',
-            icon: "../assets/img/globe_alt.png",
-            p: 'Praesent interdum est gravida vehicula est node maecenas loareet morbi a dosis luctus novum est praesent.',
-        },
-        {
-            title: 'Praesent Morbi',
-            icon: "../assets/img/bell_alt.png",
-            p: 'Elipsis magna a terminal nulla elementuk morbi elite forte maecenas est magna etos interdum vitae est.',
-        }
-    ],
     // Item carousel
     carouselClasses: {
         images: [

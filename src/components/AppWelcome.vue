@@ -20,12 +20,37 @@ export default {
             </div>
             <div class="info-card">
                 <ul class="d-flex justify-content-center">
-                    <li v-for="(icon, index) in store.iconWelcome" :key="index">
+                    <li>
                         <div class="icons">
                             <img src="../assets/img/schoolbag_alt.png" alt="">
                         </div>
-                        <h5>{{ icon.title }}</h5>
-                        <p>{{ icon.p}}</p>
+                        <h5>Morbi Etos</h5>
+                        <p>Praesent interdum est gravida vehicula est node maecenas loareet morbi a dosis luctus novum
+                            est praesent.</p>
+                    </li>
+                    <li>
+                        <div class="icons violet">
+                            <img src="../assets/img/stroller_alt.png" alt="">
+                        </div>
+                        <h5>Congue Gravida</h5>
+                        <p>Elipsis magna a terminal nulla elementuk morbi elite forte maecenas est magna etos interdum
+                            vitae est.</p>
+                    </li>
+                    <li>
+                        <div class="icons">
+                            <img src="../assets/img/globe_alt.png" alt="">
+                        </div>
+                        <h5>Maecenadas Node</h5>
+                        <p>Praesent interdum est gravida vehicula est node maecenas loareet morbi a dosis luctus novum
+                            est praesent.</p>
+                    </li>
+                    <li>
+                        <div class="icons violet">
+                            <img src="../assets/img/bell_alt.png" alt="">
+                        </div>
+                        <h5>Praesent Morbi</h5>
+                        <p>Elipsis magna a terminal nulla elementuk morbi elite forte maecenas est magna etos interdum
+                            vitae est.</p>
                     </li>
                 </ul>
             </div>
@@ -53,12 +78,16 @@ export default {
         .info-card {
             text-align: center;
 
-            ul li {
-                margin: 1em;
+            ul {
+                li {
+                    margin: 1em;
 
-                h5 {
-                    margin: .5em;
-                    color: $text-color;
+
+
+                    h5 {
+                        margin: .5em;
+                        color: $text-color;
+                    }
                 }
 
                 .icons {
@@ -66,6 +95,10 @@ export default {
                     display: inline-block;
                     background-color: $orange-icon;
                     border-radius: 50%;
+                }
+
+                .violet {
+                    background-color: #4c4a9b;
                 }
             }
         }
