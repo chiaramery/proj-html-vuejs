@@ -1,6 +1,12 @@
 <script>
+import { store } from "../store";
 export default {
     name: 'AppClasses',
+    data() {
+        return {
+            store
+        }
+    }
 }
 </script>
 
@@ -23,13 +29,13 @@ export default {
                 </div>
             </div>
             <div class="container-card">
-                <div class="card-info" v-for="number in 4" :key="number">
+                <div class="card-info" v-for="(classe, index) in store.cardClass" :key="index">
                     <div class="text-card">
-                        <h5>Title</h5>
+                        <h5>{{ classe.title }}</h5>
                         <p>Class name</p>
                         <div class="text-info">
-                            <h6>12-24</h6>
-                            <p>Month olds</p>
+                            <h6>{{ classe.old }}</h6>
+                            <p>{{ classe.year}}</p>
                         </div>
                     </div>
                     <div class="image-card">

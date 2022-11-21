@@ -71,7 +71,7 @@ export default {
 
 #overview {
     padding: 3em 0;
-    background-color: $bg-gray;
+    background-color: rgb(245 245 245);
 
     // Card info
     .container {

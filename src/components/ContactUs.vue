@@ -87,12 +87,13 @@ export default {
 
             input {
                 width: 100%;
+                margin: .3em;
             }
         }
 
         .message {
             input {
-                margin: 10px;
+                margin: .4em;
                 height: 90%;
                 width: 100%;
 

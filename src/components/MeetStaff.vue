@@ -54,6 +54,7 @@ export default {
 <style lang="scss" scoped>
 #meet-staff {
     padding: 2em 0;
+    background-color: rgb(245 245 245);
 
     .container {
         .title {

@@ -17,19 +17,17 @@ export default {
                 <h5>We have been educating children for over fifteen years. Our goal is to create a place that engages
                     each
                     child.</h5>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit debitis voluptatum explicabo laborum
-                    facilis. Quidem saepe consequatur, quaerat autem praesentium expedita tenetur consequuntur pariatur
-                    quisquam eaque sapiente in ratione dolores.</p>
+                <p class="botts"> Praesent interdum est gravida vehicula est node maecenas loareet morbi a dosis luctus
+                    novum est
+                    praesent. Urna eget lacinia eleifend praesent luctus a arcu quis facilisis venenatis.</p>
                 <div class="list-check">
-                    <ul>
-                        <li v-for="(point, index) in store.listCheck" :key="index">
-                            <div class="list">
-                                <img src="../assets/img/style_1.png" alt="">
-                                <p>{{ point }}</p>
-                            </div>
-                        </li>
 
-                    </ul>
+                    <div v-for="(point, index) in store.listCheck" :key="index">
+                        <div class="list">
+                            <img src="../assets/img/style_1.png" alt="">
+                            <p>{{ point }}</p>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="icon col-6">
@@ -55,22 +53,31 @@ export default {
 <style lang="scss" scoped>
 #goal {
     padding: 1.5em 0 0 0;
-    background-color: aquamarine;
 
     .container {
         display: flex;
         padding: 2em;
 
         .text-check {
+            h5 {
+                color: #554e9e;
+            }
+
+            .botts {
+                padding-bottom: 2em;
+            }
+
             .list-check {
+
+                font-size: .8em;
+
                 .list {
                     display: flex;
                     align-items: center;
 
                     img {
                         max-width: 100%;
-                        margin: 0 15px 15px 0;
-
+                        margin: 0 10px 10px 0;
 
                     }
                 }
@@ -85,6 +92,19 @@ export default {
 
             .icon-card {
                 width: calc(100% / 2);
+
+                h5 {
+                    color: #554e9e;
+                }
+
+                .top-icon {
+
+                    img {
+                        padding: 1em;
+                        border-radius: 50%;
+                        background-color: white;
+                    }
+                }
             }
         }
     }
