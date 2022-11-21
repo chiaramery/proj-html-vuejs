@@ -39,7 +39,6 @@ export default {
     background-size: cover;
 
     .row {
-
         .math-info {
             height: 100%;
             color: white;
@@ -73,7 +72,6 @@ export default {
                 }
             }
         }
-
     }
 
     .wrapper-button {

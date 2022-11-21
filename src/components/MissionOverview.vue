@@ -184,7 +184,7 @@ export default {
                     }
 
                     .active {
-                        border-bottom: 2px solid orange;
+                        border-bottom: 1px solid orange;
                     }
 
                 }

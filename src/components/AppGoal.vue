@@ -53,6 +53,7 @@ export default {
 <style lang="scss" scoped>
 #goal {
     padding: 1.5em 0 0 0;
+    background-color: rgb(245 245 245);
 
     .container {
         display: flex;

@@ -34,8 +34,14 @@ export default {
                         <h5>{{ classe.title }}</h5>
                         <p>Class name</p>
                         <div class="text-info">
-                            <h6>{{ classe.old }}</h6>
-                            <p>{{ classe.year}}</p>
+                            <div class="left">
+                                <h6>{{ classe.old }}</h6>
+                                <p>{{ classe.year }}</p>
+                            </div>
+                            <div class="right">
+                                <h6>{{ classe.class}}</h6>
+                                <p>Class size</p>
+                            </div>
                         </div>
                     </div>
                     <div class="image-card">
@@ -92,13 +98,31 @@ export default {
             background-color: $card-color;
 
             .text-card {
-                padding: 1em;
+                padding: .8em 0 .8em .8em;
+
+                h6 {
+                    color: white;
+                }
+
+                p {
+                    color: rgb(245 245 245);
+                    font-size: .8em;
+                }
 
                 .text-info {
+                    width: 100%;
+                    text-align: center;
+                    display: flex;
+                    justify-content: space-around;
                     font-size: 1.3em;
 
                     p {
-                        font-size: .8em;
+                        font-size: .6em;
+                    }
+
+                    .left,
+                    .right {
+                        margin: .4em 1em;
                     }
                 }
             }
