@@ -4,26 +4,9 @@ export default {
     name: 'MissionOverview',
     data() {
         return {
-            store,
-            activeSlide: 0,
+            store
         }
     },
-    methods: {
-        showNext() {
-            if (this.activeSlide < store.images.length - 1) {
-                this.activeSlide++;
-            } else {
-                this.activeSlide = 0;
-            }
-        },
-        showPrev() {
-            if (this.activeSlide > 0) {
-                this.activeSlide--;
-            } else {
-                this.activeSlide = store.images.length - 1;
-            }
-        }
-    }
 }
 </script>
 
@@ -68,14 +51,15 @@ export default {
                 <div class="slider col-6">
                     <div class="item">
                         <img src="../assets/img/gallery_01-690x506.jpg" alt="">
-                        <img class="prev" @click.prevent="showPrev" src="../assets/img/slider_previous.png" alt="">
-                        <img class="next" @click.prevent="showNext" src="../assets/img/slider_next.png" alt="">
+                        <img class="prev" src="../assets/img/slider_previous.png" alt="">
+                        <img class="next" src="../assets/img/slider_next.png" alt="">
                     </div>
                     <div class="bottom-img">
-                        <div class="thumb">
-                            <img src="../assets/img/gallery_01-690x506.jpg" alt="">
-                        </div>
                         <div class="thumb active">
+                            <img src="../assets/img/gallery_01-690x506.jpg" alt="">
+                            <img class="plus" src="../assets/img/image_overlay.png" alt="">
+                        </div>
+                        <div class="thumb">
                             <img src="../assets/img/gallery_02-690x506.jpg" alt="">
                         </div>
                         <div class="thumb">
@@ -173,15 +157,31 @@ export default {
 
                     .thumb {
                         width: calc(100% / 3 - 5px);
+                        position: relative;
 
                         img {
                             padding-bottom: .5em;
                             margin-top: 5px;
                         }
+
+                        .plus {
+                            display: none;
+                            position: absolute;
+                            top: 50%;
+                            left: 50%;
+                            transform: translate(-50%, -50%);
+                            padding: .5em;
+                            background-color: rgba(85, 78, 158, .8);
+                            border-radius: 100%;
+
+                        }
+
+
+
                     }
 
                     .active {
-                        border-bottom: 1px solid orange;
+                        border-bottom: 2px solid orange;
                     }
                 }
             }

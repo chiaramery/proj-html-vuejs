@@ -45,6 +45,11 @@ export default {
                 img {
                     width: 20%;
                 }
+
+                &:hover {
+                    background-color: white;
+                    color: rgb(85, 78, 158);
+                }
             }
         }
 

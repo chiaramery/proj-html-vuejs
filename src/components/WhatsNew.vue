@@ -137,6 +137,12 @@ export default {
             background-color: #fe6601;
             color: white;
 
+            &:hover {
+                background-color: white;
+                color: rgb(85, 78, 158);
+                border: 1px solid rgb(85, 78, 158);
+            }
+
             .next {
                 width: 20%;
             }

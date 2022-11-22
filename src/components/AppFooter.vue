@@ -100,19 +100,19 @@ export default {
             <div class="icon">
                 <ul class="list-icon">
                     <li>
-                        <img src="../assets/img/behance.png" alt="">
+                        <a href=""><img src="../assets/img/behance.png" alt="/behance"></a>
                     </li>
                     <li>
-                        <img src="../assets/img/dribbble.png" alt="">
+                        <a href=""><img src="../assets/img/dribbble.png" alt="/dribble"></a>
                     </li>
                     <li>
-                        <img src="../assets/img/envato.png" alt="">
+                        <a href=""><img src="../assets/img/envato.png" alt="/envato"></a>
                     </li>
                     <li>
-                        <img src="../assets/img/facebook.png" alt="">
+                        <a href=""><img src="../assets/img/facebook.png" alt="/facebook"></a>
                     </li>
                     <li>
-                        <img src="../assets/img/twitter.png" alt="">
+                        <a href=""><img src="../assets/img/twitter.png" alt="/twitter"></a>
                     </li>
                 </ul>
             </div>

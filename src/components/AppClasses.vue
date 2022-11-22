@@ -153,6 +153,12 @@ export default {
                     bottom: 0;
                     display: inline-block;
                     background-color: #fe6601;
+                    border: 1px solid transparent;
+
+                    &:hover {
+                        border: 1px solid white;
+                        background-color: rgba(254, 102, 1, .8);
+                    }
 
                     a {
                         display: flex;
