@@ -76,8 +76,6 @@ export default {
 </template>
 
 <style lang="scss" scoped>
-@use "../style/partials/variables" as *;
-
 #overview {
     padding: 3em 0;
     background-color: rgb(245 245 245);
@@ -89,13 +87,13 @@ export default {
                 h5 {
                     padding: .5em 0;
                     font-size: 1.8em;
-                    color: $text-color;
+                    color: #4c4a9b;
                 }
 
                 .btn {
                     margin: 0 .5em;
                     color: white;
-                    background-color: $orange-icon;
+                    background-color: #fe6601;
                 }
 
                 .info {
@@ -107,7 +105,7 @@ export default {
                     .icon {
                         padding: 2em;
                         border-radius: 50%;
-                        background-color: $orange-icon;
+                        background-color: #fe6601;
 
                         img {
                             width: 50px;

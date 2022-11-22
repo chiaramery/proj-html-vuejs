@@ -72,8 +72,6 @@ export default {
 </template>
 
 <style lang="scss" scoped>
-@use "../style/partials/variables" as *;
-
 #classes {
     padding: 2em 0;
 
@@ -81,7 +79,7 @@ export default {
         padding-bottom: 3em;
 
         h2 {
-            color: $text-color;
+            color: #4c4a9b;
         }
     }
 
@@ -90,7 +88,7 @@ export default {
 
         .text-title {
             padding: 1em;
-            color: $text-color;
+            color: #4c4a9b;
             font-size: 1.5em;
         }
 
@@ -110,7 +108,7 @@ export default {
             display: flex;
             justify-content: space-between;
             color: white;
-            background-color: $card-color;
+            background-color: #4c4a9b;
 
             .text-card {
                 padding: .8em 0 .8em .8em;

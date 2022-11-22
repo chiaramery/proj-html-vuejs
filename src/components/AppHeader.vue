@@ -36,8 +36,6 @@ export default {
 </template>
 
 <style lang="scss" scoped>
-@use "../style/partials/variables" as *;
-
 header {
     height: 7em;
     background-color: white;
@@ -71,7 +69,7 @@ header {
 
                         a {
                             height: 100%;
-                            color: $text-color;
+                            color: #4c4a9b;
 
                             &:hover {
                                 color: inherit;

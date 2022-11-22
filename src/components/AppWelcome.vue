@@ -68,14 +68,12 @@ export default {
 </template>
 
 <style lang="scss" scoped>
-@use "../style/partials/variables" as *;
-
 #welcome {
     padding: 2em 0;
 
     .container {
         .title {
-            color: $text-color;
+            color: #4c4a9b;
             padding-bottom: 3em;
 
             p {
@@ -94,14 +92,14 @@ export default {
 
                     h5 {
                         margin: .5em;
-                        color: $text-color;
+                        color: #4c4a9b;
                     }
                 }
 
                 .icons {
                     padding: 3em;
                     display: inline-block;
-                    background-color: $orange-icon;
+                    background-color: #fe6601;
                     border-radius: 50%;
                 }
 
