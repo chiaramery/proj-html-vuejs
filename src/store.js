@@ -72,28 +72,28 @@ export const store = reactive({
     cardClass: [
         {
             title: 'Little Lambs',
-            img: '../assets/img/class_01-690x506.jpg',
+            img: 'class_01-690x506.jpg',
             old: '12-24',
             year: 'Month olds',
             class: '9',
         },
         {
             title: 'Bouncy Bears',
-            img: '../assets/img/class_01-690x506.jpg',
+            img: 'class_02-690x506.jpg',
             old: '2-3',
             year: 'Year olds',
             class: '12',
         },
         {
             title: 'Tenderhearts',
-            img: '../assets/img/class_01-690x506.jpg',
+            img: 'class_03-690x506.jpg',
             old: '3-4',
             year: 'Year olds',
             class: '15',
         },
         {
             title: 'Shining Stars',
-            img: '../assets/img/class_01-690x506.jpg',
+            img: 'class_04-690x506.jpg',
             old: '4-5',
             year: 'Year olds',
             class: '20',

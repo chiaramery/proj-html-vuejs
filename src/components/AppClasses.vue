@@ -6,6 +6,11 @@ export default {
         return {
             store
         }
+    },
+    methods: {
+        getImagePath(img) {
+            return new URL(img, import.meta.url).href
+        }
     }
 }
 </script>
@@ -39,13 +44,13 @@ export default {
                                 <p>{{ classe.year }}</p>
                             </div>
                             <div class="right">
-                                <h6>{{ classe.class}}</h6>
+                                <h6>{{ classe.class }}</h6>
                                 <p>Class size</p>
                             </div>
                         </div>
                     </div>
                     <div class="image-card">
-                        <img src="../assets/img/class_01-690x506.jpg" alt="">
+                        <img :src="getImagePath(`../assets/img/${classe.img}`)" :alt="classe.title">
                         <div class="button">
                             <a href="">READ MORE<img src="../assets/img/slider_next.png" alt=""></a>
                         </div>
