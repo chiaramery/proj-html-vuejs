@@ -1,5 +1,4 @@
 <script>
-import { store } from "../store";
 import AppMore from './AppMore.vue';
 import AppSlider from './AppSlider.vue';
 import MeetStaff from './MeetStaff.vue';
