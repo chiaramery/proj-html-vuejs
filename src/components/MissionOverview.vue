@@ -17,7 +17,7 @@ export default {
             <div class="row">
                 <div class="information col-6">
                     <!-- Button -->
-                    <div class="btn">Overview</div>
+                    <div class="btn active">Overview</div>
                     <div class="btn">Our Mission</div>
                     <!-- /Button -->
                     <!-- Title -->
@@ -92,6 +92,15 @@ export default {
 
                 .btn {
                     margin: 0 .5em;
+                    color: gray;
+
+                    &:hover {
+                        color: white;
+                        background-color: #fe6601;
+                    }
+                }
+
+                .active {
                     color: white;
                     background-color: #fe6601;
                 }
@@ -99,11 +108,11 @@ export default {
                 .info {
                     display: flex;
                     justify-content: space-between;
-                    align-items: flex-end;
+                    align-items: center;
                     margin: .5em;
 
                     .icon {
-                        padding: 2em;
+                        padding: .8em;
                         border-radius: 50%;
                         background-color: #fe6601;
 
