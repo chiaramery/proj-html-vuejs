@@ -7,6 +7,11 @@ export default {
             store
         }
     },
+    methods: {
+        getImagePath(img) {
+            return new URL(img, import.meta.url).href
+        }
+    }
 }
 </script>
 
@@ -20,7 +25,7 @@ export default {
                 <div class="icon">
                     <ul>
                         <li v-for="(link, index) in store.links" :key="index">
-                            <img class="img" src="../assets/img/cart.png" alt="">
+                            <img :src="getImagePath(`../assets/img/${link.img}`)" :alt="link.href">
                             <a :href="href">{{ link.name}}</a>
                         </li>
                     </ul>

@@ -6,37 +6,37 @@ export const store = reactive({
         {
             name: 'Home',
             href: '/home',
-            img: "../assets/img/home.png",
+            img: "home.png",
         },
         {
             name: 'Pages',
             href: '/pages',
-            img: "../assets/img/home.png",
+            img: "document.png",
         },
         {
             name: 'Blog',
             href: '/blog',
-            img: "../assets/img/home.png",
+            img: "printer.png",
         },
         {
             name: 'Shop',
             href: '/shop',
-            img: "../assets/img/home.png",
+            img: "cart.png",
         },
         {
             name: 'Shortcodes',
             href: '/shortcodes',
-            img: "../assets/img/home.png",
+            img: "lab.png",
         },
         {
             name: 'Support',
             href: '/support',
-            img: "../assets/img/home.png",
+            img: "chat.png",
         },
         {
             name: 'Contact',
             href: '/contact',
-            img: "../assets/img/home.png",
+            img: "envelope.png",
         },
     ],
     // Item carousel
@@ -201,24 +201,28 @@ export const store = reactive({
     // Contacts
     contact: [
         {
+            img: "",
             title: 'Posta Address',
             one: 'Fable Care Center',
             two: '85 Fentiman Ave',
             three: 'Ottawa, ON K1S 0T7',
         },
         {
+            img: "",
             title: 'Phone & Email',
             one: 'Phone: 1-800-64-38',
             two: 'Fax: 1-800-64-39',
             three: 'office@fable.com',
         },
         {
+            img: "",
             title: 'Business Hour',
             one: 'Monday - Friday',
             two: '8.00 am - 5.00 pm',
             three: 'Weekend Closed',
         },
         {
+            img: "",
             title: 'Sessions',
             one: 'Mornings, 8 am - 12 noon ',
             two: 'Afternoons, 1 pm - 5 pm',
