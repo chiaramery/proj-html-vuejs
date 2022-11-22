@@ -133,7 +133,9 @@ export default {
             justify-content: center;
             display: inline-block;
             margin-top: .8em;
+            border: 1px solid transparent;
             padding: .5em;
+
             background-color: #fe6601;
             color: white;
 
