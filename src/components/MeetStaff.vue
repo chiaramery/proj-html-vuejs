@@ -34,16 +34,97 @@ export default {
             <!-- Team -->
             <div class="wrapper-team">
                 <div class="row">
-                    <div class="teacher" v-for="(teacher, index) in store.teachers" :key="index">
-                        <img src="../assets/img/team_01.jpg" alt="">
-                        <div class="name">
-                            <h5>{{ teacher.name }}</h5>
-                            <p>{{ teacher.work}}</p>
+                    <!-- Prima card -->
+                    <div class="card-teacher">
+                        <div class="teacher text-center">
+                            <img src="../assets/img/team_04.jpg" alt="">
+                            <div class="name">Ruth Richie</div>
+                            <div class="role">
+                                <p>Teacher</p>
+                            </div>
+                        </div>
+                        <div class="description">
+                            <div class="quote">
+                                <img src="../assets/img/quote.png" alt="">
+                            </div>
+                            <p>I have just finished my studies in Early Childhood Education, and I am also the kid's
+                                yoga
+                                teacher here at Fable. I enjoy cooking, swimming and bike riding in my free time.</p>
+                            <div class="icon">
+                                <img src="../assets/img/mail.png" alt="">
+                                <img src="../assets/img/facebook.png" alt="">
+                                <img src="../assets/img/pinterest.png" alt="">
+                            </div>
                         </div>
                     </div>
-                    <div class="description">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur laboriosam
-                            exercitationem hic fuga porro, saepe,</p>
+                    <!-- Seconda card -->
+                    <div class="card-teacher">
+                        <div class="teacher text-center">
+                            <img src="../assets/img/team_03.jpg" alt="">
+                            <div class="name">Katie Willmore</div>
+                            <div class="role">
+                                <p>Assistant Teacher</p>
+                            </div>
+                        </div>
+                        <div class="description">
+                            <div class="quote">
+                                <img src="../assets/img/quote.png" alt="">
+                            </div>
+                            <p>My name is Katie. I grew up and studied in Canada. This is my second year at Fable and
+                                love every minute of it, making the children's learning experience fun.</p>
+                            <div class="icon">
+                                <img src="../assets/img/dribbble.png" alt="">
+                                <img src="../assets/img/facebook.png" alt="">
+                                <img src="../assets/img/instagram.png" alt="">
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- Terza card -->
+                    <div class="card-teacher">
+                        <div class="teacher text-center">
+                            <img src="../assets/img/team_02.jpg" alt="">
+                            <div class="name">Angela Watson</div>
+                            <div class="role">
+                                <p>Lead Teacher</p>
+                            </div>
+                        </div>
+                        <div class="description">
+                            <div class="quote">
+                                <img src="../assets/img/quote.png" alt="">
+                            </div>
+                            <p>I hold a degree in Early Childhood Education and an advanced English language
+                                certificate. I have been working as a kindergarten teacher since 2002.</p>
+                            <div class="icon">
+                                <img src="../assets/img/bing.png" alt="">
+                                <img src="../assets/img/skype.png" alt="">
+                                <img src="../assets/img/linkedin.png" alt="">
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- Quarta card -->
+                    <div class="card-teacher">
+                        <div class="teacher text-center">
+                            <img src="../assets/img/team_01.jpg" alt="">
+                            <div class="name">Angela Lynn</div>
+                            <div class="role">
+                                <p>Teacher</p>
+                            </div>
+                        </div>
+                        <div class="description">
+                            <div class="quote">
+                                <img src="../assets/img/quote.png" alt="">
+                            </div>
+                            <p>I have completed a Graduate Diploma in Early Childhood Teaching. I have worked with
+                                children aged from six weeks to eight years. This is my second year at Fable.</p>
+                            <div class="icon">
+                                <img src="../assets/img/youtube.png" alt="">
+                                <img src="../assets/img/twitter.png" alt="">
+                                <img src="../assets/img/googleplus.png" alt="">
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </div>
@@ -71,24 +152,62 @@ export default {
         }
 
         .wrapper-team {
+
             .row {
                 width: 100%;
                 display: flex;
 
-                .teacher {
-                    width: calc(100% / 4);
+                .card-teacher {
+                    display: flex;
+                    justify-content: space-around;
+                    width: calc(100% / 2);
+                    position: relative;
+                }
 
+                .teacher {
+                    img {
+                        width: 200px;
+                    }
 
                     .name {
+                        padding-top: 1em;
                         color: #554e9e;
                         text-align: center;
+                    }
+
+                    .role {
+                        font-size: .8em;
+                        padding-bottom: 1em;
                     }
                 }
 
                 .description {
                     display: flex;
-                    align-items: center;
-                    width: 30%;
+                    flex-direction: column;
+                    justify-content: flex-end;
+                    width: 45%;
+
+                    .quote {
+                        text-align: right;
+                        padding: .3em;
+                        position: absolute;
+                        top: 15%;
+                        left: 50%;
+                        transform: translate(-50%);
+                        border: 2px solid #fe6601;
+                        width: 20%;
+                    }
+
+                    p {
+                        font-size: .9em;
+                    }
+
+                    .icon {
+                        img {
+                            margin: 2px;
+                            background-color: #fe6601;
+                        }
+                    }
                 }
             }
         }
