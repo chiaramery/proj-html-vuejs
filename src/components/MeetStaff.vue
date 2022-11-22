@@ -6,6 +6,11 @@ export default {
         return {
             store
         }
+    },
+    methods: {
+        getImagePath(img) {
+            return new URL(img, import.meta.url).href
+        }
     }
 }
 </script>
@@ -35,96 +40,25 @@ export default {
             <div class="wrapper-team">
                 <div class="row">
                     <!-- Prima card -->
-                    <div class="card-teacher">
+                    <div class="card-teacher" v-for="(teacher, index) in store.team" :key="index">
                         <div class="teacher text-center">
-                            <img src="../assets/img/team_04.jpg" alt="">
-                            <div class="name">Ruth Richie</div>
+                            <img :src="getImagePath(`../assets/img/${teacher.img}`)" :alt="teacher.name">
+                            <div class="name">{{ teacher.name }}</div>
                             <div class="role">
-                                <p>Teacher</p>
+                                <p>{{ teacher.role }}</p>
                             </div>
                         </div>
                         <div class="description">
                             <div class="quote">
                                 <img src="../assets/img/quote.png" alt="">
                             </div>
-                            <p>I have just finished my studies in Early Childhood Education, and I am also the kid's
-                                yoga
-                                teacher here at Fable. I enjoy cooking, swimming and bike riding in my free time.</p>
+                            <p>{{ teacher.description }}</p>
                             <div class="icon">
-                                <img src="../assets/img/mail.png" alt="">
-                                <img src="../assets/img/facebook.png" alt="">
-                                <img src="../assets/img/pinterest.png" alt="">
+                                <img :src="getImagePath(`../assets/img/${teacher.icon1}`)" alt="icon">
+                                <img :src="getImagePath(`../assets/img/${teacher.icon2}`)" alt="icon">
+                                <img :src="getImagePath(`../assets/img/${teacher.icon3}`)" alt="icon">
                             </div>
                         </div>
-                    </div>
-                    <!-- Seconda card -->
-                    <div class="card-teacher">
-                        <div class="teacher text-center">
-                            <img src="../assets/img/team_03.jpg" alt="">
-                            <div class="name">Katie Willmore</div>
-                            <div class="role">
-                                <p>Assistant Teacher</p>
-                            </div>
-                        </div>
-                        <div class="description">
-                            <div class="quote">
-                                <img src="../assets/img/quote.png" alt="">
-                            </div>
-                            <p>My name is Katie. I grew up and studied in Canada. This is my second year at Fable and
-                                love every minute of it, making the children's learning experience fun.</p>
-                            <div class="icon">
-                                <img src="../assets/img/dribbble.png" alt="">
-                                <img src="../assets/img/facebook.png" alt="">
-                                <img src="../assets/img/instagram.png" alt="">
-                            </div>
-                        </div>
-
-                    </div>
-                    <!-- Terza card -->
-                    <div class="card-teacher">
-                        <div class="teacher text-center">
-                            <img src="../assets/img/team_02.jpg" alt="">
-                            <div class="name">Angela Watson</div>
-                            <div class="role">
-                                <p>Lead Teacher</p>
-                            </div>
-                        </div>
-                        <div class="description">
-                            <div class="quote">
-                                <img src="../assets/img/quote.png" alt="">
-                            </div>
-                            <p>I hold a degree in Early Childhood Education and an advanced English language
-                                certificate. I have been working as a kindergarten teacher since 2002.</p>
-                            <div class="icon">
-                                <img src="../assets/img/bing.png" alt="">
-                                <img src="../assets/img/skype.png" alt="">
-                                <img src="../assets/img/linkedin.png" alt="">
-                            </div>
-                        </div>
-
-                    </div>
-                    <!-- Quarta card -->
-                    <div class="card-teacher">
-                        <div class="teacher text-center">
-                            <img src="../assets/img/team_01.jpg" alt="">
-                            <div class="name">Angela Lynn</div>
-                            <div class="role">
-                                <p>Teacher</p>
-                            </div>
-                        </div>
-                        <div class="description">
-                            <div class="quote">
-                                <img src="../assets/img/quote.png" alt="">
-                            </div>
-                            <p>I have completed a Graduate Diploma in Early Childhood Teaching. I have worked with
-                                children aged from six weeks to eight years. This is my second year at Fable.</p>
-                            <div class="icon">
-                                <img src="../assets/img/youtube.png" alt="">
-                                <img src="../assets/img/twitter.png" alt="">
-                                <img src="../assets/img/googleplus.png" alt="">
-                            </div>
-                        </div>
-
                     </div>
                 </div>
             </div>

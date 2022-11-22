@@ -127,6 +127,45 @@ export const store = reactive({
             p: 'Praesent modea est gravida node vehical luctus',
         },
     ],
+    // Team
+    team: [
+        {
+            img: "team_04.jpg",
+            name: 'Ruth Richie',
+            role: 'Teacher',
+            description: "I have just finished my studies in Early Childhood Education, and I am also the kid's yoga teacher here at Fable. I enjoy cooking, swimming and bike riding in my free time.",
+            icon1: "mail.png",
+            icon2: "facebook.png",
+            icon3: "pinterest.png",
+        },
+        {
+            img: "team_03.jpg",
+            name: 'Katie Willmore',
+            role: 'Assistant Teacher',
+            description: "My name is Katie. I grew up and studied in Canada. This is my second year at Fable and love every minute of it, making the children's learning experience fun.",
+            icon1: "dribbble.png",
+            icon2: "facebook.png",
+            icon3: "instagram.png",
+        },
+        {
+            img: "team_02.jpg",
+            name: 'Angela Watson',
+            role: 'Lead Teacher',
+            description: 'I hold a degree in Early Childhood Education and an advanced English language certificate. I have been working as a kindergarten teacher since 2002.',
+            icon1: "bing.png",
+            icon2: "skype.png",
+            icon3: "linkedin.png",
+        },
+        {
+            img: "team_01.jpg",
+            name: 'Angela Lynn',
+            role: 'Teacher',
+            description: 'I have completed a Graduate Diploma in Early Childhood Teaching. I have worked with children aged from six weeks to eight years. This is my second year at Fable.',
+            icon1: "youtube.png",
+            icon2: "twitter.png",
+            icon3: "googleplus.png",
+        },
+    ],
     // What's New
     new: [
         {
