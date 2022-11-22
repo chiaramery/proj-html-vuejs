@@ -12,9 +12,7 @@ export default {
             <img src="../assets/img/slider_slide3_img3.png" alt="">
         </div>
         <div class="wrapper-button">
-            <a href="" class="click-change"></a>
-            <a href="" class="click-change"></a>
-            <a href="" class="click-change"></a>
+            <a href="" class="button" v-for="n in 4"></a>
         </div>
     </div>
     <!-- /Jumbotron slider -->
@@ -39,10 +37,13 @@ export default {
     }
 
     .wrapper-button {
-        width: 10%;
-        margin: -2em auto;
+        width: 15%;
+        margin-top: -2em;
+        margin-left: 52%;
+        transform: translate(-50%);
+        display: flex;
 
-        .click-change {
+        .button {
             padding: 1px 9px;
             margin: .5em;
             border: 2px solid #fe6601;

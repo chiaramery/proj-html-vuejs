@@ -102,7 +102,6 @@ export default {
     .container {
         .row {
             .information {
-
                 h5 {
                     padding: .5em 0;
                     font-size: 1.8em;
@@ -145,7 +144,6 @@ export default {
 
             // Slider
             .slider {
-
                 .item {
                     width: 100%;
                     position: relative;
@@ -176,7 +174,6 @@ export default {
                     .thumb {
                         width: calc(100% / 3 - 5px);
 
-
                         img {
                             padding-bottom: .5em;
                             margin-top: 5px;
@@ -186,7 +183,6 @@ export default {
                     .active {
                         border-bottom: 1px solid orange;
                     }
-
                 }
             }
         }

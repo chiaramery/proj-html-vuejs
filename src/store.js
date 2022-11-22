@@ -39,12 +39,6 @@ export const store = reactive({
             img: "envelope.png",
         },
     ],
-    // Item carousel
-    images: [
-        '../assets/img/gallery_01-690x506.jpg',
-        '../assets/img/gallery_02-690x506.jpg',
-        '../assets/img/gallery_03-690x506.jpg',
-    ],
     // Element info math
     circleInfo: [
         {

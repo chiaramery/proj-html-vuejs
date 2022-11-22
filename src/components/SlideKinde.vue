@@ -57,10 +57,8 @@ export default {
 
         .icon {
             text-align: center;
-            padding: 2em;
-            width: 2em;
-            height: 2em;
-            line-height: 2em;
+            font-size: 100%;
+            padding: 1em;
             border-radius: 100%;
             border: 1px solid white;
             position: absolute;

@@ -79,7 +79,9 @@ export default {
 
     .wrapper-button {
         width: 15%;
-        margin: 2em auto;
+        margin: 2em 50%;
+        transform: translate(-50%);
+        display: flex;
 
         .button {
             padding: 1px 9px;
