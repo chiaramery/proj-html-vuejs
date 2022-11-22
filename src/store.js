@@ -134,21 +134,24 @@ export const store = reactive({
             img: "blog_09-525x315.jpg",
             title: 'Drawing and Painting Lessons',
             name: 'Anna Brown',
-            event: 'Events, Fun'
+            event: 'Events, Fun',
+            num: '42',
         },
         {
             date: 'October 03, 2014',
             img: "blog_10-525x315.jpg",
             title: 'Fall Parents Meeting Day',
             name: 'Anna Brown',
-            event: 'Dance, Education'
+            event: 'Dance, Education',
+            num: '19',
         },
         {
             date: 'September 20, 2014',
             img: "blog_08-525x315.jpg",
             title: 'Birthday in Kindergarten',
             name: 'Anna Brown',
-            event: 'Games, General'
+            event: 'Games, General',
+            num: '22',
         },
 
     ],

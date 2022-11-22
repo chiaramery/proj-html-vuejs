@@ -28,7 +28,10 @@ export default {
                 <div class="card-c" v-for="(element, index) in store.new" :key="index">
                     <div class="up">
                         <p>{{ element.date }}</p>
-                        <img :src="getImagePath(`../assets/img/${element.img}`)" :alt="element.title">
+                        <div class="image">
+                            <img :src="getImagePath(`../assets/img/${element.img}`)" :alt="element.title">
+                            <span class="num">{{ element.num }}</span>
+                        </div>
                     </div>
                     <div class="text">
                         <h5>{{ element.title }}</h5>
@@ -78,6 +81,20 @@ export default {
             .up {
                 text-align: left;
                 font-size: .8em;
+
+                .image {
+                    position: relative;
+                }
+
+                .num {
+                    position: absolute;
+                    bottom: 0;
+                    right: 0;
+                    color: white;
+                    background-color: #fe6601;
+                    font-size: 1.3em;
+                    padding: .3em .5em;
+                }
             }
 
             .bottom {
