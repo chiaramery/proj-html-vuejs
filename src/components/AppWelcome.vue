@@ -11,13 +11,19 @@ export default {
 </script>
 
 <template>
+    <!-- Section Welcome to Fable -->
     <section id="welcome">
+        <!-- Container -->
         <div class="container">
+            <!-- Title section -->
             <div class="title">
                 <h2>Welcome to Fable</h2>
                 <p>Fable daycare, preschool and kindergarten</p>
                 <img src="../assets/img/header_divider.png" alt="">
             </div>
+            <!-- /Title section -->
+
+            <!-- Card info -->
             <div class="info-card">
                 <ul class="d-flex justify-content-center">
                     <li>
@@ -54,9 +60,11 @@ export default {
                     </li>
                 </ul>
             </div>
+            <!-- /Card info -->
         </div>
 
     </section>
+    <!-- /Section Welcome to Fable -->
 </template>
 
 <style lang="scss" scoped>

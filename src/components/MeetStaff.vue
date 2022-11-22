@@ -19,10 +19,12 @@ export default {
     <!-- Meet Our Staff -->
     <section id="meet-staff">
         <div class="container">
+            <!-- Title -->
             <div class="title">
                 <h1>Meet Our Staff</h1>
                 <p>With education and experience in early childhood care</p>
             </div>
+            <!-- /Title -->
             <div class="wrapper-col">
                 <div class="title-col col-6">
                     <h5>Our staff consist of three teachers and one assistant with espperience in early childhood
@@ -39,7 +41,7 @@ export default {
             <!-- Team -->
             <div class="wrapper-team">
                 <div class="row">
-                    <!-- Prima card -->
+                    <!-- Card -->
                     <div class="card-teacher" v-for="(teacher, index) in store.team" :key="index">
                         <div class="teacher text-center">
                             <img :src="getImagePath(`../assets/img/${teacher.img}`)" :alt="teacher.name">
@@ -53,13 +55,19 @@ export default {
                                 <img src="../assets/img/quote.png" alt="">
                             </div>
                             <p>{{ teacher.description }}</p>
+                            <!-- Social networks of the teachers -->
                             <div class="icon">
-                                <img :src="getImagePath(`../assets/img/${teacher.icon1}`)" alt="icon">
-                                <img :src="getImagePath(`../assets/img/${teacher.icon2}`)" alt="icon">
-                                <img :src="getImagePath(`../assets/img/${teacher.icon3}`)" alt="icon">
+                                <a :href="teacher.icon1"><img :src="getImagePath(`../assets/img/${teacher.icon1}.png`)"
+                                        alt="icon"></a>
+                                <a :href="teacher.icon2"><img :src="getImagePath(`../assets/img/${teacher.icon2}.png`)"
+                                        alt="icon"></a>
+                                <a :href="teacher.icon3"><img :src="getImagePath(`../assets/img/${teacher.icon3}.png`)"
+                                        alt="icon"></a>
                             </div>
+                            <!-- /Social networks of the teachers -->
                         </div>
                     </div>
+                    <!-- /Card -->
                 </div>
             </div>
         </div>

@@ -5,12 +5,17 @@ export default {
 </script>
 
 <template>
+    <!-- Section Slide Kindergarten -->
     <section id="kindergarten">
         <div class="container">
             <div class="wrapper-text">
+                <!-- Image background -->
                 <div class="icon">
                     <img src="../assets/img/quote_alt.png" alt="">
                 </div>
+                <!-- /Image background -->
+
+                <!-- Text of section -->
                 <div class="text">
                     <span>
                         Fable Kindergarten is a great spanlace for my daughter to start her schooling experience, It's
@@ -22,14 +27,17 @@ export default {
                     </div>
                     <span>Joe R. Hamblen</span>
                 </div>
+                <!-- /Text of section -->
             </div>
 
+            <!-- Buttons of slider -->
             <div class="wrapper-button">
                 <a href="" class="button" v-for="n in 6"></a>
-
             </div>
+            <!-- /Buttons of slider -->
         </div>
     </section>
+    <!-- /Section Slide Kindergarten -->
 </template>
 
 <style lang="scss" scoped>

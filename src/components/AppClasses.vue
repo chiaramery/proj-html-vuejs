@@ -16,12 +16,15 @@ export default {
 </script>
 
 <template>
+    <!-- Section Description Classes -->
     <section id="classes">
+        <!-- Title -->
         <div class="title">
             <h2>Our Classes</h2>
             <p>Fable daycare, preschool and kindergarten</p>
             <img src="../assets/img/header_divider.png" alt="">
         </div>
+        <!-- /Title -->
         <div class="container">
             <div class="row">
                 <div class="text-title col-6">
@@ -33,7 +36,9 @@ export default {
                     interdum, nibh vitae sodales, magna ante feugiat elit maecenas.
                 </div>
             </div>
+            <!-- Container card -->
             <div class="container-card">
+                <!-- Card -->
                 <div class="card-info" v-for="(classe, index) in store.cardClass" :key="index">
                     <div class="text-card">
                         <h5>{{ classe.title }}</h5>
@@ -49,16 +54,21 @@ export default {
                             </div>
                         </div>
                     </div>
+                    <!-- Images cards -->
                     <div class="image-card">
                         <img :src="getImagePath(`../assets/img/${classe.img}`)" :alt="classe.title">
                         <div class="button">
                             <a href="">READ MORE<img src="../assets/img/slider_next.png" alt=""></a>
                         </div>
                     </div>
+                    <!-- /Images cards -->
                 </div>
+                <!-- /Card -->
             </div>
+            <!-- /Container card -->
         </div>
     </section>
+    <!-- /Section Description Classes -->
 </template>
 
 <style lang="scss" scoped>

@@ -11,6 +11,7 @@ export default {
 </script>
 
 <template>
+    <!-- Section Math informations -->
     <section id="carousel">
         <div class="container">
             <div class="row">
@@ -29,6 +30,7 @@ export default {
             <a class="button" v-for="number in 6"></a>
         </div>
     </section>
+    <!-- /Section Math informations -->
 </template>
 
 <style lang="scss" scoped>

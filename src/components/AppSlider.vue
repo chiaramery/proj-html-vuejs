@@ -5,6 +5,7 @@ export default {
 </script>
 
 <template>
+    <!-- Jumbotron slider -->
     <div class="wrapper-slider">
         <div class="images">
             <img src="../assets/img/slider_slide3_img2.png" alt="">
@@ -16,6 +17,7 @@ export default {
             <a href="" class="click-change"></a>
         </div>
     </div>
+    <!-- /Jumbotron slider -->
 </template>
 
 <style lang="scss" scoped>

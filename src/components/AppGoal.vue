@@ -16,6 +16,7 @@ export default {
 </script>
 
 <template>
+    <!-- Section Goal of Fable -->
     <section id="goal">
         <div class="container">
             <div class="text-check col-6">
@@ -25,8 +26,8 @@ export default {
                 <p class="botts"> Praesent interdum est gravida vehicula est node maecenas loareet morbi a dosis luctus
                     novum est
                     praesent. Urna eget lacinia eleifend praesent luctus a arcu quis facilisis venenatis.</p>
+                <!-- List of the point -->
                 <div class="list-check">
-
                     <div v-for="(point, index) in store.listCheck" :key="index">
                         <div class="list">
                             <img src="../assets/img/style_1.png" alt="">
@@ -34,6 +35,7 @@ export default {
                         </div>
                     </div>
                 </div>
+                <!-- /List of the point -->
             </div>
             <div class="icon col-6">
                 <div class="icon-card" v-for="(item, index) in store.iconCard" :key="index">
@@ -45,14 +47,16 @@ export default {
                 </div>
             </div>
         </div>
-
+        <!-- Static images bottom section -->
         <div class="static-img">
             <img src="../assets/img/gallery_01-690x506.jpg" alt="">
             <img src="../assets/img/gallery_02-690x506.jpg" alt="">
             <img src="../assets/img/gallery_03-690x506.jpg" alt="">
             <img src="../assets/img/gallery_04-690x506.jpg" alt="">
         </div>
+        <!-- /Static images bottom section -->
     </section>
+    <!-- /Section Goal of Fable -->
 </template>
 
 <style lang="scss" scoped>

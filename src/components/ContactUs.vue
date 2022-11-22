@@ -16,14 +16,18 @@ export default {
 </script>
 
 <template>
+    <!-- Section Contact Us -->
     <section id="contact-us">
         <div class="container">
+            <!-- Title -->
             <div class="title">
                 <h5>Contact Us</h5>
                 <p>Our postal address and contact details</p>
                 <img src="../assets/img/header_divider.png" alt="">
             </div>
+            <!-- /Title -->
             <div class="row">
+                <!-- Info contact -->
                 <div class="item" v-for="(element, index) in store.contact" :key="index">
                     <img :src="getImagePath(`../assets/img/${element.img}`)" :alt="element.title">
                     <h5>{{ element.title }}</h5>
@@ -31,7 +35,9 @@ export default {
                     <p>{{ element.two }}</p>
                     <p>{{ element.three}}</p>
                 </div>
+                <!-- /Info contact -->
             </div>
+            <!-- User Input -->
             <div class="wrapper-row">
                 <div class="user-data">
                     <input type="text" placeholder="Your Name*">
@@ -42,13 +48,17 @@ export default {
                     <textarea name="yourmessage" id="" cols="50" rows="6" placeholder="Your Message*"></textarea>
                 </div>
             </div>
+            <!-- /User Input -->
 
+            <!-- Button send message -->
             <div class="button">
                 SEND MESSAGE
             </div>
+            <!-- /Button send message -->
         </div>
 
     </section>
+    <!-- /Section Contact Us -->
 </template>
 
 <style lang="scss" scoped>
@@ -86,6 +96,7 @@ export default {
     }
 
     .wrapper-row {
+        padding-top: 3em;
         display: flex;
 
         .user-data {
@@ -120,7 +131,6 @@ export default {
         padding: .5em;
         cursor: pointer;
         display: inline-block;
-
     }
 }
 </style>

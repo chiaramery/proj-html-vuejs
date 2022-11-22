@@ -5,6 +5,7 @@ export default {
 </script>
 
 <template>
+    <!-- Section More Information -->
     <section id="more">
         <div class="container">
             <div class="more">
@@ -15,6 +16,7 @@ export default {
             </div>
         </div>
     </section>
+    <!-- /Section More Information -->
 </template>
 
 <style lang="scss" scoped>

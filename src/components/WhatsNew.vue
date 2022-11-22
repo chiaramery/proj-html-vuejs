@@ -16,16 +16,21 @@ export default {
 </script>
 
 <template>
+    <!-- Section What's New -->
     <section id="news">
         <div class="container">
+            <!-- Title -->
             <div class="title">
                 <h5>What's New</h5>
                 <p>Keep up to date with the latest news</p>
                 <img src="../assets/img/header_divider.png" alt="">
             </div>
+            <!-- /Title -->
 
             <div class="row">
+                <!-- Card container -->
                 <div class="card-c" v-for="(element, index) in store.new" :key="index">
+                    <!-- Part up of the card -->
                     <div class="up">
                         <p>{{ element.date }}</p>
                         <div class="image">
@@ -33,12 +38,18 @@ export default {
                             <span class="num">{{ element.num }}</span>
                         </div>
                     </div>
+                    <!-- /Part up of the card -->
+
+                    <!-- Text of the card -->
                     <div class="text">
                         <h5>{{ element.title }}</h5>
                         <p>Magna est consectetur interdum modest dictum. Curabitur est faucibus, malesauda esttincidunt
                             etos et mauris, ninc a libero govum est cuprum [..]</p>
                     </div>
+                    <!-- /Text of the card -->
                     <hr>
+
+                    <!-- Bottom part of the card -->
                     <div class="bottom d-flex justify-content-around">
                         <p>
                             <img src="../assets/img/author.png" alt="">
@@ -51,12 +62,17 @@ export default {
 
                         </p>
                     </div>
+                    <!-- /Bottom part of the card -->
                 </div>
+                <!-- /Card container -->
             </div>
-            <div class="button">GO TO BLOG <img class="next" src="../assets/img/slider_next.png" alt=""></div>
 
+            <!-- Button go to blog -->
+            <div class="button">GO TO BLOG <img class="next" src="../assets/img/slider_next.png" alt=""></div>
+            <!-- /Button go to blog -->
         </div>
     </section>
+    <!-- /Section What's New -->
 </template>
 
 <style lang="scss" scoped>
