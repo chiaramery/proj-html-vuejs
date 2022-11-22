@@ -127,54 +127,25 @@ export const store = reactive({
             p: 'Praesent modea est gravida node vehical luctus',
         },
     ],
-    // Teachers
-    teachers: [
-        {
-            name: 'Ruth Richie',
-            work: 'Teacher',
-            p: "I have just finished my studies in Early Childhood Education, and I am also the kid's yoga teacher here at Fable. I enjoy cooking, swimming and bike riding in my free time.",
-            icon: '',
-        },
-        {
-            name: 'Katie Willmore',
-            work: 'Assistant Teacher',
-            p: "My name is Katie. I grew up and studied in Canada. This is my second year at Fable and love every minute of it, making the children's learning experience fun.",
-            icon: '',
-        },
-        {
-            name: 'Angela Watson',
-            work: 'Lead Teacher',
-            p: "I hold a degree in Early Childhood Education and an advanced English language certificate. I have been working as a kindergarten teacher since 2002.",
-            icon: '',
-        },
-        {
-            name: 'Angela Lynn',
-            work: 'Teacher',
-            p: "I have completed a Graduate Diploma in Early Childhood Teaching. I have worked with children aged from six weeks to eight years. This is my second year at Fable.",
-            icon: '',
-        },
-
-
-    ],
     // What's New
     new: [
         {
             date: 'October 03, 2014',
-            img: '',
+            img: "blog_09-525x315.jpg",
             title: 'Drawing and Painting Lessons',
             name: 'Anna Brown',
             event: 'Events, Fun'
         },
         {
             date: 'October 03, 2014',
-            img: '',
+            img: "blog_10-525x315.jpg",
             title: 'Fall Parents Meeting Day',
             name: 'Anna Brown',
             event: 'Dance, Education'
         },
         {
             date: 'September 20, 2014',
-            img: '',
+            img: "blog_08-525x315.jpg",
             title: 'Birthday in Kindergarten',
             name: 'Anna Brown',
             event: 'Games, General'

@@ -6,6 +6,11 @@ export default {
         return {
             store
         }
+    },
+    methods: {
+        getImagePath(img) {
+            return new URL(img, import.meta.url).href
+        }
     }
 }
 </script>
@@ -23,7 +28,7 @@ export default {
                 <div class="card-c" v-for="(element, index) in store.new" :key="index">
                     <div class="up">
                         <p>{{ element.date }}</p>
-                        <img src="../assets/img/blog_08-300x180.jpg" alt="">
+                        <img :src="getImagePath(`../assets/img/${element.img}`)" :alt="element.title">
                     </div>
                     <div class="text">
                         <h5>{{ element.title }}</h5>
