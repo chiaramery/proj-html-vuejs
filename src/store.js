@@ -111,18 +111,22 @@ export const store = reactive({
     // Icon
     iconCard: [
         {
+            img: "toy.png",
             title: 'Learning & Fun',
             p: 'Praesent modea est gravida node vehical luctus',
         },
         {
+            img: "meal.png",
             title: 'Healthy Meals',
             p: 'Terminal interdium a eleifend maecenas est morbi',
         },
         {
+            img: "school.png",
             title: 'Friendly Place',
             p: 'Terminal interdium a eleifend maecenas est morbi',
         },
         {
+            img: "shield.png",
             title: 'Children Safety',
             p: 'Praesent modea est gravida node vehical luctus',
         },
@@ -144,7 +148,7 @@ export const store = reactive({
             role: 'Assistant Teacher',
             description: "My name is Katie. I grew up and studied in Canada. This is my second year at Fable and love every minute of it, making the children's learning experience fun.",
             icon1: "dribbble.png",
-            icon2: "facebook.png",
+            icon2: "stumbleupon.png",
             icon3: "instagram.png",
         },
         {

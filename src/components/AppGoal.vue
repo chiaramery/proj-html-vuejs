@@ -6,6 +6,11 @@ export default {
         return {
             store
         }
+    },
+    methods: {
+        getImagePath(img) {
+            return new URL(img, import.meta.url).href
+        }
     }
 }
 </script>
@@ -33,7 +38,7 @@ export default {
             <div class="icon col-6">
                 <div class="icon-card" v-for="(item, index) in store.iconCard" :key="index">
                     <div class="top-icon">
-                        <img src="../assets/img/shield.png" alt="">
+                        <img :src="getImagePath(`../assets/img/${item.img}`)" :alt="item.title">
                     </div>
                     <h5>{{ item.title }}</h5>
                     <p>{{ item.p }} </p>
@@ -89,7 +94,6 @@ export default {
             text-align: center;
             display: flex;
             flex-wrap: wrap;
-            align-items: center;
 
             .icon-card {
                 width: calc(100% / 2);
@@ -99,12 +103,25 @@ export default {
                 }
 
                 .top-icon {
+                    margin-left: 50%;
+                    transform: translate(-50%);
+                    margin-top: 2em;
+                    font-size: 2em;
+                    width: 2em;
+                    height: 2em;
+                    line-height: 2em;
+                    border-radius: 100%;
+                    background-color: white;
+                    margin-bottom: .5em;
+
 
                     img {
-                        padding: 1em;
-                        border-radius: 50%;
-                        background-color: white;
+                        padding: .5em;
+                        width: 2em;
+                        height: 2em;
+                        line-height: 2em;
                     }
+
                 }
             }
         }
