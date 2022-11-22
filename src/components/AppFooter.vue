@@ -6,6 +6,11 @@ export default {
         return {
             store
         }
+    },
+    methods: {
+        getImagePath(img) {
+            return new URL(img, import.meta.url).href
+        }
     }
 }
 </script>
@@ -72,9 +77,9 @@ export default {
                         <div class="hr">
                             <hr>
                         </div>
-                        <div class="posts" v-for="(element, index) in store.new" :key="index">
+                        <div class="posts" v-for="(element, index) in store.recent" :key="index">
                             <div class="image">
-                                <img src="../assets/img/blog_08-150x150.jpg" alt="">
+                                <img :src="getImagePath(`../assets/img/${element.img}`)" :alt="element.title">
                             </div>
                             <div class="text-post">
                                 <span>{{ element.title }}</span>
@@ -175,12 +180,16 @@ footer {
                 justify-content: space-between;
 
                 .image {
-                    width: 80px;
+                    width: 90px;
                 }
 
                 .text-post {
                     font-size: .8em;
-                    margin: .7em;
+                    margin: 1em;
+
+                    p {
+                        margin: 1em 0;
+                    }
 
                     img {
                         width: 10%;

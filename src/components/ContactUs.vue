@@ -6,6 +6,11 @@ export default {
         return {
             store
         }
+    },
+    methods: {
+        getImagePath(img) {
+            return new URL(img, import.meta.url).href
+        }
     }
 }
 </script>
@@ -20,6 +25,7 @@ export default {
             </div>
             <div class="row">
                 <div class="item" v-for="(element, index) in store.contact" :key="index">
+                    <img :src="getImagePath(`../assets/img/${element.img}`)" :alt="element.title">
                     <h5>{{ element.title }}</h5>
                     <p>{{ element.one }}</p>
                     <p>{{ element.two }}</p>
@@ -48,12 +54,13 @@ export default {
 <style lang="scss" scoped>
 #contact-us {
     position: relative;
-    padding: 3em 3em 6em 3em;
+    padding: 2em 3em 6em 3em;
 
     .title {
         padding-bottom: 3em;
 
         h5 {
+            font-size: 1.7em;
             color: #554e9e;
         }
 
