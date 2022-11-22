@@ -32,14 +32,14 @@ export default {
                     <p>{{ element.three}}</p>
                 </div>
             </div>
-            <div class="wrap-input">
-                <div class="input col-6">
-                    <input type="text" class="name" placeholder="Your Name*">
-                    <input type="text" class="email" placeholder="Your Email*">
-                    <input type="text" class="subject" placeholder="Subject">
+            <div class="wrapper-row">
+                <div class="user-data">
+                    <input type="text" placeholder="Your Name*">
+                    <input type="text" placeholder="Your E-mail*">
+                    <input type="text" placeholder="Your Subject">
                 </div>
-                <div class="message col-6">
-                    <input type="text" class="subject" placeholder="Your Message*">
+                <div class="message">
+                    <textarea name="yourmessage" id="" cols="50" rows="6" placeholder="Your Message*"></textarea>
                 </div>
             </div>
 
@@ -85,29 +85,27 @@ export default {
         }
     }
 
-    .wrap-input {
-        padding: 2em;
+    .wrapper-row {
         display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
 
-        .input {
+        .user-data {
+            width: 50%;
             display: flex;
             flex-direction: column;
-            justify-content: space-around;
 
             input {
-                width: 100%;
-                margin: .3em;
+                margin: 1em 1em .3em;
+
+                padding: .3em;
             }
         }
 
         .message {
-            input {
-                margin: .4em;
-                height: 90%;
-                width: 100%;
+            width: 50%;
 
+            textarea {
+                margin: 1em .2em .3em;
+                padding: .3em;
             }
         }
     }

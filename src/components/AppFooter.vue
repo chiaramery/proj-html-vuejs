@@ -39,22 +39,22 @@ export default {
                         </div>
 
                         <div class="month">
-                            <p>OCTOBER 2014 (2)</p>
+                            <a href="/month">OCTOBER 2014 (2)</a>
                         </div>
                         <div class="month">
-                            <p>SEPTEMBER 2014(2)</p>
+                            <a href="/month">SETTEMBER 2014(2)</a>
                         </div>
                         <div class="month">
-                            <p>AUGUST 2014 (2)</p>
+                            <a href="/month">AUGUST 2014 (2)</a>
                         </div>
                         <div class="month">
-                            <p>JULY 2014 (2)</p>
+                            <a href="/month">JULY 2014 (2)</a>
                         </div>
                         <div class="month">
-                            <p>JUNE 2014 (2)</p>
+                            <a href="/month">JUNE 2014 (2)</a>
                         </div>
                         <div class="month">
-                            <p>MAY 2014 (2)</p>
+                            <a href="/month">MAY 2014 (2)</a>
                         </div>
 
                     </div>
@@ -152,6 +152,10 @@ footer {
                 line-height: 2em;
                 padding-left: .5em;
                 margin: .3em;
+
+                a {
+                    color: inherit;
+                }
             }
         }
 
